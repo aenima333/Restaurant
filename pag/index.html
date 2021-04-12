@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script src="../assets/js/jquery.min.js"></script>
     <link rel="icon" href="../assets/img/icon.png" />
-    <title>Food Delivery Landing Page</title>
+    <title>Home de Pasteleria</title>
 </head>
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
     <a class="navbar-brand" href="./index.html"><img src="../assets/img/logo.png" /></a>
@@ -82,199 +82,371 @@
                 href="#"
                 class="button button--is-active"
                 data-target="pizzaMenu"
-                >Pizzas</a
+                >Pasteles</a
               >
-              <a href="#" class="button" data-target="coffeeMenu">Drinks</a>
-        <a href="#" class="button" data-target="noodlesMenu">Desserts</a>
-    </div>
-    <!-- Start Pizza Menu -->
-    <div class="menu menu--is-visible" id="pizzaMenu" data-aos="fade-up">
-        <div class="item row align-items-center">
-            <div class="col-sm-3 pr-5">
-                <img class="product-img" src="../assets/img/pizza-1.png" />
+              <a href="#" class="button" data-target="noodlesMenu"
+                >Pasteles Veganos</a
+              >
+              <a href="#" class="button" data-target="BebestibleMenu"
+                >Bebestibles</a
+              >
             </div>
-            <div class="details col-sm-9">
-                <div class="item__header">
+            <!-- Start Menu Pasteles Menu -->
+            <div
+              class="menu menu--is-visible"
+              id="MenuPasteles"
+              data-aos="fade-up"
+            >
+              <div class="item row align-items-center">
+                <div class="col-sm-3 pr-5">
+                  <img class="product-img" src="../assets/img/pizza-1.png" />
+                </div>
+                <div class="details col-sm-9">
+                  <div class="item__header">
                     <h3 class="item__title">Cheese Pizza</h3>
                     <span class="item__dots"></span>
                     <span class="item__price">$15</span>
-                </div>
-                <p class="item__description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.
-                </p>
-                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="1" data-name="Cheese Pizza" data-price="15" data-quantity="1" data-image="../assets/img/pizza-1.png">
-                    Add to cart
+                  </div>
+                  <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt quos harum officia eaque nobis ut.
+                  </p>
+                  <button
+                    class="btn btn-sm btn-outline-primary my-cart-btn"
+                    data-id="1"
+                    data-name="Cheese Pizza"
+                    data-price="15"
+                    data-quantity="1"
+                    data-image="../assets/img/pizza-1.png"
+                  >
+                    Añadir al carrito
                   </button>
-            </div>
-        </div>
-        <div class="item row align-items-center">
-            <div class="col-sm-3 pr-5">
-                <img class="product-img" src="../assets/img/pizza-2.png" />
-            </div>
-            <div class="details col-sm-9">
-                <div class="item__header">
+                </div>
+              </div>
+              <div class="item row align-items-center">
+                <div class="col-sm-3 pr-5">
+                  <img class="product-img" src="../assets/img/pizza-2.png" />
+                </div>
+                <div class="details col-sm-9">
+                  <div class="item__header">
                     <h3 class="item__title">Hot Pastrami</h3>
                     <span class="item__dots"></span>
                     <span class="item__price">$25</span>
-                </div>
-                <p class="item__description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.
-                </p>
-                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="2" data-name="Hot Pastrami" data-price="25" data-quantity="1" data-image="../assets/img/pizza-2.png">
-                    Add to cart
+                  </div>
+                  <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt quos harum officia eaque nobis ut.
+                  </p>
+                  <button
+                    class="btn btn-sm btn-outline-primary my-cart-btn"
+                    data-id="2"
+                    data-name="Hot Pastrami"
+                    data-price="25"
+                    data-quantity="1"
+                    data-image="../assets/img/pizza-2.png"
+                  >
+                    Añadir al carrito
                   </button>
-            </div>
-        </div>
-        <div class="item row align-items-center">
-            <div class="col-sm-3 pr-5">
-                <img class="product-img" src="../assets/img/pizza-3.png" />
-            </div>
-            <div class="details col-sm-9">
-                <div class="item__header">
+                </div>
+              </div>
+              <div class="item row align-items-center">
+                <div class="col-sm-3 pr-5">
+                  <img class="product-img" src="../assets/img/pizza-3.png" />
+                </div>
+                <div class="details col-sm-9">
+                  <div class="item__header">
                     <h3 class="item__title">Classic Pizza</h3>
                     <span class="item__dots"></span>
                     <span class="item__price">$20</span>
-                </div>
-                <p class="item__description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.
-                </p>
-                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="3" data-name="Classic Pizza" data-price="20" data-quantity="1" data-image="../assets/img/pizza-3.png">
-                    Add to cart
+                  </div>
+                  <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt quos harum officia eaque nobis ut.
+                  </p>
+                  <button
+                    class="btn btn-sm btn-outline-primary my-cart-btn"
+                    data-id="3"
+                    data-name="Classic Pizza"
+                    data-price="20"
+                    data-quantity="1"
+                    data-image="../assets/img/pizza-3.png"
+                  >
+                    Añadir al carrito
                   </button>
-            </div>
-        </div>
-        <div class="item row align-items-center">
-            <div class="col-sm-3 pr-5">
-                <img class="product-img" src="../assets/img/pizza-4.png" />
-            </div>
-            <div class="details col-sm-9">
-                <div class="item__header">
+                </div>
+              </div>
+              <div class="item row align-items-center">
+                <div class="col-sm-3 pr-5">
+                  <img class="product-img" src="../assets/img/pizza-4.png" />
+                </div>
+                <div class="details col-sm-9">
+                  <div class="item__header">
                     <h3 class="item__title">Country Pizza</h3>
                     <span class="item__dots"></span>
                     <span class="item__price">$17</span>
-                </div>
-                <p class="item__description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.
-                </p>
-                <button class="btn btn-sm btn-outline-primary my-cart-btn" data-id="4" data-name="Country Pizza" data-price="17" data-quantity="1" data-image="../assets/img/pizza-4.png">
-                    Add to cart
+                  </div>
+                  <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt quos harum officia eaque nobis ut.
+                  </p>
+                  <button
+                    class="btn btn-sm btn-outline-primary my-cart-btn"
+                    data-id="4"
+                    data-name="Country Pizza"
+                    data-price="17"
+                    data-quantity="1"
+                    data-image="../assets/img/pizza-4.png"
+                  >
+                    Añadir al carrito
                   </button>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- End Pizza Menu -->
-    <!-- Start Coffee Menu -->
-    <div class="menu" id="coffeeMenu">
-        <div class="item">
-            <div class="item__header">
-                <h3 class="item__title">Cappuccino</h3>
-                <span class="item__dots"></span>
-                <span class="item__price">$4</span>
+            <!-- End Pasteles Menu -->
+            <!-- Start Pasteles Veganos Menu -->
+            <div class="menu" id="noodlesMenu" data-aos="fade-up">
+              <div class="item row align-items-center">
+                <div class="col-sm-3 pr-5">
+                  <img class="product-img" src="../assets/img/pizza-1.png" />
+                </div>
+                <div class="details col-sm-9">
+                  <div class="item__header">
+                    <h3 class="item__title">Cheese Pizza</h3>
+                    <span class="item__dots"></span>
+                    <span class="item__price">$15</span>
+                  </div>
+                  <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt quos harum officia eaque nobis ut.
+                  </p>
+                  <button
+                    class="btn btn-sm btn-outline-primary my-cart-btn"
+                    data-id="1"
+                    data-name="Cheese Pizza"
+                    data-price="15"
+                    data-quantity="1"
+                    data-image="../assets/img/pizza-1.png"
+                  >
+                    Añadir al carrito
+                  </button>
+                </div>
+              </div>
+              <div class="item row align-items-center">
+                <div class="col-sm-3 pr-5">
+                  <img class="product-img" src="../assets/img/pizza-2.png" />
+                </div>
+                <div class="details col-sm-9">
+                  <div class="item__header">
+                    <h3 class="item__title">Hot Pastrami</h3>
+                    <span class="item__dots"></span>
+                    <span class="item__price">$25</span>
+                  </div>
+                  <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt quos harum officia eaque nobis ut.
+                  </p>
+                  <button
+                    class="btn btn-sm btn-outline-primary my-cart-btn"
+                    data-id="2"
+                    data-name="Hot Pastrami"
+                    data-price="25"
+                    data-quantity="1"
+                    data-image="../assets/img/pizza-2.png"
+                  >
+                    Añadir al carrito
+                  </button>
+                </div>
+              </div>
+              <div class="item row align-items-center">
+                <div class="col-sm-3 pr-5">
+                  <img class="product-img" src="../assets/img/pizza-3.png" />
+                </div>
+                <div class="details col-sm-9">
+                  <div class="item__header">
+                    <h3 class="item__title">Classic Pizza</h3>
+                    <span class="item__dots"></span>
+                    <span class="item__price">$20</span>
+                  </div>
+                  <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt quos harum officia eaque nobis ut.
+                  </p>
+                  <button
+                    class="btn btn-sm btn-outline-primary my-cart-btn"
+                    data-id="3"
+                    data-name="Classic Pizza"
+                    data-price="20"
+                    data-quantity="1"
+                    data-image="../assets/img/pizza-3.png"
+                  >
+                    Añadir al carrito
+                  </button>
+                </div>
+              </div>
+              <div class="item row align-items-center">
+                <div class="col-sm-3 pr-5">
+                  <img class="product-img" src="../assets/img/pizza-4.png" />
+                </div>
+                <div class="details col-sm-9">
+                  <div class="item__header">
+                    <h3 class="item__title">Country Pizza</h3>
+                    <span class="item__dots"></span>
+                    <span class="item__price">$17</span>
+                  </div>
+                  <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt quos harum officia eaque nobis ut.
+                  </p>
+                  <button
+                    class="btn btn-sm btn-outline-primary my-cart-btn"
+                    data-id="4"
+                    data-name="Country Pizza"
+                    data-price="17"
+                    data-quantity="1"
+                    data-image="../assets/img/pizza-4.png"
+                  >
+                    Añadir al carrito
+                  </button>
+                </div>
+              </div>
             </div>
-            <p class="item__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.
-            </p>
-        </div>
-        <div class="item">
-            <div class="item__header">
-                <h3 class="item__title">Iced Coffee</h3>
-                <span class="item__dots"></span>
-                <span class="item__price">$5</span>
+            <!-- End Pasteles Veganos -->
+            <!-- Start Menu Bebestibles -->
+            <div class="menu" id="BebestibleMenu" data-aos="fade-up">
+              <div class="item row align-items-center">
+                <div class="col-sm-3 pr-5">
+                  <img
+                    class="product-img"
+                    src="../assets/img/cappuccino-1.png"
+                  />
+                </div>
+                <div class="details col-sm-9">
+                  <div class="item__header">
+                    <h3 class="item__title">Cappuccino</h3>
+                    <span class="item__dots"></span>
+                    <span class="item__price">$2500</span>
+                  </div>
+                  <p class="item__description">
+                    Cappucino hecho con los mejores granos de cafe, opcion con
+                    leche vegana
+                  </p>
+                  <button
+                    class="btn btn-sm btn-outline-primary my-cart-btn"
+                    data-id="1"
+                    data-name="Cappucino"
+                    data-price="2500"
+                    data-quantity="1"
+                    data-image="../assets/img/cappuccino-1.png"
+                  >
+                    Añadir al carrito
+                  </button>
+                </div>
+              </div>
+              <div class="item row align-items-center">
+                <div class="col-sm-3 pr-5">
+                  <img class="product-img" src="../assets/img/Limonada-1.png" />
+                </div>
+                <div class="details col-sm-9">
+                  <div class="item__header">
+                    <h3 class="item__title">Limonada</h3>
+                    <span class="item__dots"></span>
+                    <span class="item__price">$2000</span>
+                  </div>
+                  <p class="item__description">
+                    Limonada de limon de pica con hojas de menta
+                  </p>
+                  <button
+                    class="btn btn-sm btn-outline-primary my-cart-btn"
+                    data-id="2"
+                    data-name="Limonada"
+                    data-price="2000"
+                    data-quantity="1"
+                    data-image="../assets/img/Limonada-1.png"
+                  >
+                    Añadir al carrito
+                  </button>
+                </div>
+              </div>
+              <div class="item row align-items-center">
+                <div class="col-sm-3 pr-5">
+                  <img class="product-img" src="../assets/img/Coca-1.png" />
+                </div>
+                <div class="details col-sm-9">
+                  <div class="item__header">
+                    <h3 class="item__title">Bebidas clasicas</h3>
+                    <span class="item__dots"></span>
+                    <span class="item__price">$1000</span>
+                  </div>
+                  <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt quos harum officia eaque nobis ut.
+                  </p>
+                  <button
+                    class="btn btn-sm btn-outline-primary my-cart-btn"
+                    data-id="3"
+                    data-name="Coca Cola"
+                    data-price="1000"
+                    data-quantity="1"
+                    data-image="../assets/img/Coca-1.png"
+                  >
+                    Añadir al carrito
+                  </button>
+                </div>
+              </div>
+              <div class="item row align-items-center">
+                <div class="col-sm-3 pr-5">
+                  <img class="product-img" src="../assets/img/pizza-4.png" />
+                </div>
+                <div class="details col-sm-9">
+                  <div class="item__header">
+                    <h3 class="item__title">Country Pizza</h3>
+                    <span class="item__dots"></span>
+                    <span class="item__price">$17</span>
+                  </div>
+                  <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt quos harum officia eaque nobis ut.
+                  </p>
+                  <button
+                    class="btn btn-sm btn-outline-primary my-cart-btn"
+                    data-id="4"
+                    data-name="Country Pizza"
+                    data-price="17"
+                    data-quantity="1"
+                    data-image="../assets/img/pizza-4.png"
+                  >
+                    Añadir al carrito
+                  </button>
+                </div>
+              </div>
             </div>
-            <p class="item__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.
-            </p>
-        </div>
-        <div class="item">
-            <div class="item__header">
-                <h3 class="item__title">Café Latte</h3>
-                <span class="item__dots"></span>
-                <span class="item__price">$3</span>
-            </div>
-            <p class="item__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.
-            </p>
-        </div>
-        <div class="item">
-            <div class="item__header">
-                <h3 class="item__title">Espresso</h3>
-                <span class="item__dots"></span>
-                <span class="item__price">$4</span>
-            </div>
-            <p class="item__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.
-            </p>
-        </div>
-    </div>
-    <!-- End Coffee Menu -->
-    <!-- Start Noodles Menu -->
-    <div class="menu" id="noodlesMenu">
-        <div class="item">
-            <div class="item__header">
-                <h3 class="item__title">Chicken Noodles</h3>
-                <span class="item__dots"></span>
-                <span class="item__price">$16</span>
-            </div>
-            <p class="item__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.
-            </p>
-        </div>
-        <div class="item">
-            <div class="item__header">
-                <h3 class="item__title">Egg Noodles</h3>
-                <span class="item__dots"></span>
-                <span class="item__price">$12</span>
-            </div>
-            <p class="item__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.
-            </p>
-        </div>
-        <div class="item">
-            <div class="item__header">
-                <h3 class="item__title">Veg Noodles</h3>
-                <span class="item__dots"></span>
-                <span class="item__price">$10</span>
-            </div>
-            <p class="item__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.
-            </p>
-        </div>
-        <div class="item">
-            <div class="item__header">
-                <h3 class="item__title">Chuck Norris Noodles</h3>
-                <span class="item__dots"></span>
-                <span class="item__price">$20</span>
-            </div>
-            <p class="item__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.
-            </p>
-        </div>
-    </div>
-    <!-- End Noodles Menu -->
-    </div>
-    <!-- End block -->
-    <script src="../assets/js/mycart.js"></script>
-    <script src="../assets/js/mycart-custom.js"></script>
-    </section>
-    </div>
+            <!-- End Menu Bebestible -->
+          </div>
+          <!-- End block -->
+          <script src="../assets/js/mycart.js"></script>
+          <script src="../assets/js/mycart-custom.js"></script>
+        </section>
+      </div>
     </div>
     <div class="nav-item my-cart-icon">
-        <img src="../assets/img/cart.svg" style="width: 20px" />
-        <span class="badge badge-notify my-cart-badge"> </span>
+      <img src="../assets/img/cart.svg" style="width: 20px" />
+      <span class="badge badge-notify my-cart-badge"> </span>
     </div>
     <footer class="block footer1 footer text-center">
-        <p>
-            &copy;
-            <a href="https://bootstrapstarter.com/bootstrap-templates/template-fooddelivery-bootstrap-html/">"Food Delivery HTML Template"</a
+      <p>
+        &copy;
+        <a
+          href="https://bootstrapstarter.com/bootstrap-templates/template-fooddelivery-bootstrap-html/"
+          >"Food Delivery HTML Template"</a
         >
         by WowThemes.net
       </p>
     </footer>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="js/custom-general.js"></script>
+    <script src="../assets/js/custom-general.js"></script>
   </body>
 </html>
