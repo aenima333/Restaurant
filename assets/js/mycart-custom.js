@@ -81,12 +81,13 @@ $(function () {
     clickOnAddToCart: function ($addTocart) {
       goToCartIcon($addTocart);
     },
+    //DESCUENTO--CAMBIAR NOMBRE/FUNCIONES
     getDiscountPrice: function (products) {
       var total = 0;
       $.each(products, function () {
         total += this.quantity * this.price;
       });
-      return total * 0.5;
+      return total * 0.9;
     }
   });
 

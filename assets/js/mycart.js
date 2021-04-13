@@ -169,14 +169,14 @@
         '<div class="modal-content">' +
         '<div class="modal-header">' +
         '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
-        '<h5 class="modal-title" id="myModalLabel"> &nbsp; My Cart</h5>' +
+        '<h5 class="modal-title" id="myModalLabel"> &nbsp; Carrito de Compras</h5>' +
         '</div>' +
         '<div class="modal-body">' +
         '<table class="table table-hover table-responsive" id="' + idCartTable + '"></table>' +
         '</div>' +
         '<div class="modal-footer">' +
-        '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>' +
-        '<button type="button" class="btn btn-primary" id="' + idCheckoutCart + '">Checkout</button>' +
+        '<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>' +
+        '<button type="button" class="btn btn-primary" id="' + idCheckoutCart + '">Realizar Pedido</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -212,15 +212,15 @@
         '<td><strong id="' + idGrandTotal + '">$</strong></td>' +
         '<td></td>' +
         '</tr>'
-        : '<div class="alert alert-danger" role="alert" id="' + idEmptyCartMessage + '">Your cart is empty</div>'
+        : '<div class="alert alert-danger" role="alert" id="' + idEmptyCartMessage + '">Tu carrito esta vacio</div>'
       );
 
       var discountPrice = options.getDiscountPrice(products);
       if(discountPrice !== null) {
         $cartTable.append(
-          '<tr style="color: red">' +
+          '<tr style="color: Green">' +
           '<td></td>' +
-          '<td><strong>Total (including discount)</strong></td>' +
+          '<td><strong>Total (incluyendo descuentos)</strong></td>' +
           '<td></td>' +
           '<td></td>' +
           '<td><strong id="' + idDiscountPrice + '">$</strong></td>' +
