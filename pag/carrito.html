@@ -63,11 +63,11 @@
               </ul>
             </div>
             <div class="col-md-7 col-lg-8">
-              <h4 class="mb-3">Billing address</h4>
+              <h4 class="mb-3">Facturación</h4>
               <form class="needs-validation" novalidate>
                 <div class="row g-3">
                   <div class="col-sm-6">
-                    <label for="firstName" class="form-label">First name</label>
+                    <label for="firstName" class="form-label">Nombres</label>
                     <input
                       type="text"
                       class="form-control"
@@ -82,7 +82,7 @@
                   </div>
     
                   <div class="col-sm-6">
-                    <label for="lastName" class="form-label">Last name</label>
+                    <label for="lastName" class="form-label">Apellidos</label>
                     <input
                       type="text"
                       class="form-control"
@@ -91,99 +91,104 @@
                       value=""
                       required
                     />
-                    <div class="invalid-feedback">Valid last name is required.</div>
+                    <div class="invalid-feedback">Ingrese nombre válido.</div>
                   </div>
     
                   <div class="col-12">
-                    <label for="username" class="form-label">Username</label>
+                    <label for="username" class="form-label">Nombre de usuario</label>
                     <div class="input-group has-validation">
                       <span class="input-group-text">@</span>
                       <input
                         type="text"
                         class="form-control"
                         id="username"
-                        placeholder="Username"
+                        placeholder="Nombre de usuario"
                         required
                       />
-                      <div class="invalid-feedback">Your username is required.</div>
+                      <div class="invalid-feedback">Se requiere nombre de usuario.</div>
                     </div>
                   </div>
     
                   <div class="col-12">
                     <label for="email" class="form-label"
-                      >Email <span class="text-muted">(Optional)</span></label
+                      >Email <span class="text-muted">(Opcional)</span></label
                     >
                     <input
                       type="email"
                       class="form-control"
                       id="email"
-                      placeholder="you@example.com"
+                      placeholder="correo@ejemplo.com"
                     />
                     <div class="invalid-feedback">
-                      Please enter a valid email address for shipping updates.
+                      Ingrese correo electrónico.
                     </div>
                   </div>
     
                   <div class="col-12">
-                    <label for="address" class="form-label">Address</label>
+                    <label for="address" class="form-label">Dirección</label>
                     <input
                       type="text"
                       class="form-control"
                       id="address"
-                      placeholder="1234 Main St"
+                      placeholder="1234 Avenida Principal"
                       required
                     />
                     <div class="invalid-feedback">
-                      Please enter your shipping address.
+                      Ingrese dirección de envío.
                     </div>
                   </div>
     
                   <div class="col-12">
                     <label for="address2" class="form-label"
-                      >Address 2 <span class="text-muted">(Optional)</span></label
+                      >Address 2 <span class="text-muted">(Opcional)</span></label
                     >
                     <input
                       type="text"
                       class="form-control"
                       id="address2"
-                      placeholder="Apartment or suite"
+                      placeholder="Casa o Depto"
                     />
                   </div>
     
-                  <div class="col-md-5">
-                    <label for="country" class="form-label">Country</label>
-                    <select class="form-select" id="country" required>
-                      <option value="">Choose...</option>
-                      <option>United States</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Please select a valid country.
-                    </div>
-                  </div>
+                  
     
                   <div class="col-md-4">
-                    <label for="state" class="form-label">State</label>
+                    <label for="state" class="form-label">Comuna</label>
                     <select class="form-select" id="state" required>
-                      <option value="">Choose...</option>
-                      <option>California</option>
+                      <option value="">Elegir...</option>
+                      <option>Cerrillos</option>
+                      <option>Cerro Navia</option>
+                      <option>Conchalí</option>
+                      <option>El Bosque</option>
+                      <option>Estación Central</option>
+                      <option>Huechuraba</option>
+                      <option>Independencia</option>
+                      <option>La Cisterna</option>
+                      <option>La Florida</option>
+                      <option>La Granja</option>
+                      <option>La Pintana</option>
+                      <option>La Reina</option>
+                      <option>San Bernardo</option>
+                      <option>Puente Alto</option>
+                      <option>Lo Espejo</option>
+                      <option>Lo Prado</option>
+                      <option>Macul</option>
+                      <option>Maipú</option>
+                      <option>Ñuñoa</option>
+                      <option>Peñalolén</option>
+                      <option>Providencia</option>
+                      <option>Santiago</option>
+                      <option>Quinta Normal</option>
+                      <option>San Joaquín</option>
+                      <option>San José de Maipo</option>
+                      <option>San Miguel</option>
                     </select>
                     <div class="invalid-feedback">
-                      Please provide a valid state.
+                      Ingresar comuna válida.
                     </div>
                   </div>
     
-                  <div class="col-md-3">
-                    <label for="zip" class="form-label">Zip</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="zip"
-                      placeholder=""
-                      required
-                    />
-                    <div class="invalid-feedback">Zip code required.</div>
-                  </div>
-                </div>
+                 
     
                 <hr class="my-4" />
     
@@ -194,20 +199,20 @@
                     id="same-address"
                   />
                   <label class="form-check-label" for="same-address"
-                    >Shipping address is the same as my billing address</label
+                    >Dirección de envío es la misma que la dirección de facturación</label
                   >
                 </div>
     
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" id="save-info" />
                   <label class="form-check-label" for="save-info"
-                    >Save this information for next time</label
+                    >Guardar info. para futuras compras</label
                   >
                 </div>
     
                 <hr class="my-4" />
     
-                <h4 class="mb-3">Payment</h4>
+                <h4 class="mb-3">Pago</h4>
     
                 <div class="my-3">
                   <div class="form-check">
@@ -219,7 +224,7 @@
                       checked
                       required
                     />
-                    <label class="form-check-label" for="credit">Credit card</label>
+                    <label class="form-check-label" for="credit">Tarjeta de crédito</label>
                   </div>
                   <div class="form-check">
                     <input
@@ -229,7 +234,7 @@
                       class="form-check-input"
                       required
                     />
-                    <label class="form-check-label" for="debit">Debit card</label>
+                    <label class="form-check-label" for="debit">Débito</label>
                   </div>
                   <div class="form-check">
                     <input
@@ -245,7 +250,7 @@
     
                 <div class="row gy-3">
                   <div class="col-md-6">
-                    <label for="cc-name" class="form-label">Name on card</label>
+                    <label for="cc-name" class="form-label">Nombre en tarjeta</label>
                     <input
                       type="text"
                       class="form-control"
@@ -254,12 +259,12 @@
                       required
                     />
                     <small class="text-muted">Full name as displayed on card</small>
-                    <div class="invalid-feedback">Name on card is required</div>
+                    <div class="invalid-feedback">Nombre de tarjeta requerido</div>
                   </div>
     
                   <div class="col-md-6">
                     <label for="cc-number" class="form-label"
-                      >Credit card number</label
+                      >Número de tarjeta de crédito</label
                     >
                     <input
                       type="text"
@@ -269,12 +274,12 @@
                       required
                     />
                     <div class="invalid-feedback">
-                      Credit card number is required
+                      Tarjeta de crédito inválida
                     </div>
                   </div>
     
                   <div class="col-md-3">
-                    <label for="cc-expiration" class="form-label">Expiration</label>
+                    <label for="cc-expiration" class="form-label">Fecha de Expiración</label>
                     <input
                       type="text"
                       class="form-control"
@@ -282,7 +287,7 @@
                       placeholder=""
                       required
                     />
-                    <div class="invalid-feedback">Expiration date required</div>
+                    <div class="invalid-feedback">Fecha de expiración requerida</div>
                   </div>
     
                   <div class="col-md-3">
@@ -294,14 +299,14 @@
                       placeholder=""
                       required
                     />
-                    <div class="invalid-feedback">Security code required</div>
+                    <div class="invalid-feedback">Código de seguridad requerido</div>
                   </div>
                 </div>
     
                 <hr class="my-4" />
     
                 <button class="w-100 btn btn-primary btn-lg" type="submit">
-                  Continue to checkout
+                  Terminar Compra
                 </button>
               </form>
             </div>
@@ -321,8 +326,8 @@
     <template>
       <li class="list-group-item d-flex justify-content-between lh-sm">
           <div>
-              <h6 class="my-0" data->Product name</h6>
-              <small class="text-muted">Brief description</small>
+              <h6 class="my-0" data->Nombre del prodcuto</h6>
+              <small class="text-muted">Descripcion</small>
           </div>
           <span class="text-muted">$12</span>
       </li>
@@ -333,9 +338,9 @@
         &copy;
         <a
           href="https://bootstrapstarter.com/bootstrap-templates/template-fooddelivery-bootstrap-html/"
-          >"Food Delivery HTML Template"</a
+          >"© 2021 El rincón del pastel. Todos los derechos reservados"</a
         >
-        by WowThemes.net
+        
       </p>
     </footer>
     <script src="../assets/js/bootstrap.min.js"></script>
