@@ -57,15 +57,15 @@ buttons.forEach(button => button.addEventListener('click', handleClick));
 //mycart
 $(function () {
 
-  var goToCartIcon = function($addTocartBtn){
+  var goToCartIcon = function ($addTocartBtn) {
     var $cartIcon = $(".my-cart-icon");
-    var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+    var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
     $addTocartBtn.prepend($image);
     var position = $cartIcon.position();
     $image.animate({
       top: position.top,
       left: position.left
-    }, 500 , "linear", function() {
+    }, 500, "linear", function () {
       $image.remove();
     });
   }
@@ -74,17 +74,16 @@ $(function () {
     classCartIcon: 'my-cart-icon',
     classCartBadge: 'my-cart-badge',
     affixCartIcon: true,
-    checkoutCart: function(products) {
-      $.each(products, function(){
-        console.log(this);
-      });
+    checkoutCart: function (products) {
+      localStorage.setItem("purcharse", JSON.stringify(products));
+      window.location.href = './carrito.html'
     },
-    clickOnAddToCart: function($addTocart){
+    clickOnAddToCart: function ($addTocart) {
       goToCartIcon($addTocart);
     },
-    getDiscountPrice: function(products) {
+    getDiscountPrice: function (products) {
       var total = 0;
-      $.each(products, function(){
+      $.each(products, function () {
         total += this.quantity * this.price;
       });
       return total * 0.5;

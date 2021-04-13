@@ -62,21 +62,10 @@
             <div class="col-md-5 col-lg-4 order-md-last">
               <h4 class="d-flex justify-content-between align-items-center mb-3">
                 <span class="text-primary">Tu carrito</span>
-                <span  class="badge bg-primary rounded-pill">3</span>
+                <span id="total-quantiy" class="badge bg-primary rounded-pill">0</span>
               </h4>
               <ul id="cart-content" class="list-group mb-3">
               </ul>
-    
-              <form class="card p-2">
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Promo code"
-                  />
-                  <button type="submit" class="btn btn-secondary">Redeem</button>
-                </div>
-              </form>
             </div>
             <div class="col-md-7 col-lg-8">
               <h4 class="mb-3">Billing address</h4>
@@ -360,24 +349,23 @@
       AOS.init();
     </script>
     <script>
-
       (function() {
-        var items = JSON.parse(localStorage.getItem("products"));
+        var products = JSON.parse(localStorage.getItem("purcharse") || "[]");
         var container = document.getElementById('cart-content');
+        var itemLabel = document.getElementById('total-quantiy');
+
         var totalPrice = 0;
         var totalQuantity = 0;
 
-        console.log(items);
-
         // id, image, ​name, ​price, ​quantity,​summary
-        function createItemHTML(item) {
+        function createItemHTML(product) {
           return `
             <li class="list-group-item d-flex justify-content-between lh-sm">
               <div>
-                  <h6 class="my-0">${ item.name } (${item.quantity})</h6>
-                  <small class="text-muted">${ item.summary }</small>
+                  <h6 class="my-0">${ product.name } (${product.quantity})</h6>
+                  <small class="text-muted">${ product.summary }</small>
               </div>
-              <span class="text-muted">$${ item.price }</span>
+              <span class="text-muted">$${ product.price }</span>
             </li>
           `
         }
@@ -391,15 +379,16 @@
           `
         }
 
-        items.forEach(element => {
-          totalPrice += element.price * element.quantity;
-          totalQuantity += element.quantity;
+        products.forEach(product => {
+          totalPrice += Number(product.price) * Number(product.quantity);
+          totalQuantity += Number(product.quantity);
 
-          container.insertAdjacentHTML('beforeend', createItemHTML(element))
+          container.insertAdjacentHTML('beforeend', createItemHTML(product))
         });
 
         container.insertAdjacentHTML('beforeend', createTotalHTML(totalPrice))
 
+        itemLabel.innerText = totalQuantity;
       })()
     </script>
     <script src="../assets/js/custom-general.js"></script>
