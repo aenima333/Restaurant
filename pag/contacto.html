@@ -8,7 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script src="../assets/js/jquery.min.js"></script>
-    <link rel="icon" href="../assets/img/icon.png" />
+    <link rel="icon" href="../assets/img/iconopag.png" />
     <title>contacto</title>
 </head>
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
@@ -40,126 +40,51 @@
       <main>
           <div class="py-5 text-center">
               <img class="d-block mx-auto mb-4" src="../assets/img/header.png" />
-              <h2>Contactenos</h2>
+              <h2>Contáctenos</h2>
               <p class="breveintro">
-                  Somos una pasteleria de alto prestigio ubicada en Santiago, contamos con un amplio catálogo de tortas, pasteles y bebestibles
+                 Déjanos tu pregunta o comentario y nos pondremos en contacto contigo 
               </p>
           </div>
           
 
               <div class="col-md-7 col-lg-8">
-                  <h4 class="mb-3">Completa tus datos</h4>
-
                   <form class="needs-validation" novalidate>
                       <div class="row g-3">
                           <div class="col-sm-6">
-                              <label for="Primernombre" class="form-label">Primer Nombre</label>
-                              <input type="text" class="form-control" id="Primernombre" placeholder="Primer nombre" required />
+                              <label for="Nombre" class="form-label">Nombre</label>
+                              <input type="text" class="form-control" id="Nombre" placeholder="Escribe tu nombre" required />
                               <div class="invalid-feedback">
-                                  Porfavor ingresa Tu Primer nombre.
+                                  Porfavor ingresa Tu Nombre.
                               </div>
                           </div>
 
                           <div class="col-sm-6">
-                              <label for="Apellidouno" class="form-label">Apellido Materno</label>
-                              <input type="text" class="form-control" id="Apellidouno" placeholder="Apellido materno" required />
-                              <div class="invalid-feedback">
-                                  Porfavor ingresa tu Apellido Materno.
-                              </div>
-                          </div>
-
-                          <div class="col-sm-6">
-                            <label for="Apellidodos" class="form-label">Apellido Paterno</label>
-                            <input type="text" class="form-control" id="Apellidodos" placeholder="Apellido paterno" required />
-                            <div class="invalid-feedback">
-                                Porfavor ingresa tu Apellido paterno.
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                          <label for="Numero" class="form-label">Número de celular</label>
-                          <input type="text" class="form-control" id="Numero" placeholder="Ejemplo 9 33191394" required />
-                          <div class="invalid-feedback">
-                              Porfavor ingresa tu Número.
-                          </div>
-                      </div>
-
-
-                          <div class="col-12">
-                              <label for="correo" class="form-label">Correo Electronico</label>
+                              <label for="correo" class="form-label">Correo electrónico*</label>
                               <div class="input-group has-validation">
                                   <span class="input-group-text">@</span>
-                                  <input type="text" class="form-control" id="correo" placeholder="Correo" required />
+                                  <input type="text" class="form-control" id="correo" placeholder="pasteleria@gmail.com" required />
                                   <div class="invalid-feedback">
                                       Porfavor ingresa tu correo.
                                   </div>
                               </div>
-                          </div>
-
-
-              <div class="col-12">
-                <label for="Direccion" class="form-label">Dirección</label>
-                              <input type="text" class="form-control" id="Direccion" placeholder="Ejemplo: General Arriagada, 15267" required />
-                              <div class="invalid-feedback">
-                                  Porfavor ingresa tu direccion.
-                              </div>
-                          </div>
-        
-              <div class=" col-auto mr-auto">
-               <label for="ciudad" class="form-label ">Ciudad</label>
-                              <select class="form-select" id="ciudad" required>
-                  <option value="">seleccionar</option>
-                    <option>Santigo</option>
-                </select>
-                              <div class="invalid-feedback">
-                                  Porfavor selecciona una ciudad.
-                              </div>
-                          </div>
-
-                          <div class="col-auto">
-                              <label for="comuna" class="form-label">Comuna</label>
-                              <select class="form-select" id="comuna" required>
-                  <option value="">seleccionar</option>
-                  <option>Cerrillos</option>
-                  <option>Cerro Navia</option>
-                  <option>Conchalí</option>
-                  <option>El Bosque</option>
-                  <option>Estación Central</option>
-                  <option>Huechuraba</option>
-                  <option>Independencia</option>
-                  <option>La Cisterna</option>
-                  <option>La Florida</option>
-                  <option>La Granja</option>
-                  <option>La Pintana</option>
-                  <option>La Reina</option>
-                  <option>San Bernardo</option>
-                  <option>Puente Alto</option>
-                  <option>Lo Espejo</option>
-                  <option>Lo Prado</option>
-                  <option>Macul</option>
-                  <option>Maipú</option>
-                  <option>Ñuñoa</option>
-                  <option>Peñalolén</option>
-                  <option>Providencia</option>
-                  <option>Santiago</option>
-                  <option>Quinta Normal</option>
-                  <option>San Joaquín</option>
-                  <option>San José de Maipo</option>
-                  <option>San Miguel</option>
-
-                </select>
-                              <div class="invalid-feedback">
-                                  Porfavor ingresar una comuna valida.
-                              </div>
-                          </div>
-                      </div>
-
-
+                          </div> 
+                          <div class="col-sm-6">
+                            <label for="Apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="Apellido" placeholder="Ecribe tu apellido" required />
+                            <div class="invalid-feedback">
+                                Porfavor ingresa tu Apellido.
+                            </div>
+                        </div>
+                          <div class="col-sm-6">
+                            <label for="exampleFormControlTextarea1">Escriba su comentario</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" cols="50" ></textarea>
+                          </div> 
+                     </div>
               </div>
               
             <hr class="my-4" />
 
-            <h6 class="mb-3">Te contáctaremos a través de correo electrónico una vez enviada la información</h6>
+            <h6 class="col-sm-6">Te contáctaremos a través de correo electrónico una vez enviada la información</h6>
 
             <hr class="my-4" />
 
@@ -167,21 +92,99 @@
 
             <div class="py-5 text-center">
         
-           <button type="button" class="btn btn-secondary btn-rounded  btn-block btn-lg" data-mdb-ripple-color="#ffffff" style="background-color:#ff8080"> Enviar </button>
+                <button type="button" class="btn btn-danger    " data-mdb-ripple-color="#fba888"> Enviar </button>
             </div>
           
           </form>
         </div>
       </div>
     </main>
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-      <p class="mb-1">&copy; © 2021 El rincón del pastel. Todos los derechos reservados</p>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Privacidad</a></li>
-        <li class="list-inline-item"><a href="#">Terminos</a></li>
-        <li class="list-inline-item"><a href="#">Soporte</a></li>
-      </ul>
-    </footer>
+    <div class="container my-5">
+        <!-- Footer -->
+        <footer
+                class="text-center text-lg-start text-white"
+                style="background-color: #5c0518d0"
+                >   
+          <!-- links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold">EL RINCÓN DEL PASTEL</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #ffffffd0 ; height: 2px"
+                      />
+                  <p>
+                    Nuestra empresa encargada de traer los mejores pasteles incluyendo venganos
+                    lleva mas de 30 años alegrando a la gente con nuestros productos de buena calidad y preparación.
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">PRODUCTOS</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #ffffffd0; height: 2px"
+                      />
+                  <p>
+                      
+                    <a href="./index.html" class="text-white">Pasteles Veganos</a>
+                  </p>
+                  <p>
+                    <a href="./index.html" class="text-white">Pasteles</a>
+                  </p>
+                  <p> 
+                    <a href="./index.html" class="text-white">Bebestibles</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Contacto</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color:#ffffffd0; height: 2px"
+                      />
+                  <p><i class="fas fa-home mr-3"></i> Santiago,Chile</p>
+                  <p><i class="fas fa-envelope mr-3"></i> elrincondelplacer@gmail.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> + 569 3318 1391</p>
+                  <p><i class="fas fa-print mr-3"></i> + 569 3754 6481</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+      
+          <!-- Copyright -->
+          <div
+               class="text-center p-3"
+               style="background-color: rgba(180, 66, 66, 0.575)"
+               >
+            © 2021 Copyright:
+            <a class="text-white" href=
+               >EL rincón del pastel</a
+              >
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </div>
+
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
