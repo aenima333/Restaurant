@@ -36,14 +36,14 @@
           <a class="nav-link" href="./carrito.html">Carrito</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./registro.html">Registro</a>
-         </li>   
-        <li class="nav-item">
           <a class="nav-link" href="./contacto.html">Contactanos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./acercade.html">Nosotros</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./facturacion.html">Nosotros</a>
+          </li>
       </ul>
     </div>
   </nav>
@@ -53,91 +53,118 @@
       <div class="container">
         <main>
           <div class="py-5 text-center">
-            <h2>Carrito</h2>
+            <h2>Formulario de compra</h2>
           </div>
     
           <div class="row g-5">
-            <div class="col-5">
-              <h4 class="mb-3">Ingresa tu cuenta</h4>
-              <form class="needs-validation" novalidate>
-                <div class="row g-3">
-                  <div class="col-12">
-                    <label for="email" class="form-label"
-                      >Email *<span class="text-muted")</span></label
+
+
+              </div>
+              <div class="col-6">
+  
+                
+                <h4 class="mb-3">Pago</h4>
+                <div class="my-3">
+                  <div class="form-check">
+                    <input
+                      id="credit"
+                      name="paymentMethod"
+                      type="radio"
+                      class="form-check-input"
+                      checked
+                      required
+                    />
+                    <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      id="debit"
+                      name="paymentMethod"
+                      type="radio"
+                      class="form-check-input"
+                      required
+                    />
+                    <label class="form-check-label" for="debit">Débito</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      id="paypal"
+                      name="paymentMethod"
+                      type="radio"
+                      class="form-check-input"
+                      required
+                    />
+                    <label class="form-check-label" for="paypal">PayPal</label>
+                  </div>
+                </div>
+              </div>
+    
+                <hr class="my-3" />
+    
+                
+    
+                  <div class="col-md-6">
+                    <label for="cc-name" class="form-label">Nombre en tarjeta</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-name"
+                      placeholder=""
+                      required
+                    />
+                    <small class="text-muted"></small>
+                    <div class="invalid-feedback">Nombre de tarjeta requerido</div>
+                  </div>
+    
+                  <div class="col-md-6">
+                    <label for="cc-number" class="form-label"
+                      >Número de tarjeta de crédito</label
                     >
                     <input
-                      type="email"
+                      type="text"
                       class="form-control"
-                      id="email"
-                      placeholder="correo@ejemplo.com"
+                      id="cc-number"
+                      placeholder=""
+                      required
                     />
                     <div class="invalid-feedback">
-                      Ingrese correo electrónico.
+                      Tarjeta de crédito inválida
                     </div>
-                    
+                  </div>
+    
+                  <div class="col-md-3">
+                    <label for="cc-expiration" class="form-label">Fecha de Expiración</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-expiration"
+                      placeholder=""
+                      required
+                    />
+                    <div class="invalid-feedback">Fecha de expiración requerida</div>
+                </div>
+                
+                <div class="py-5 text-center">
+                  <button type="button" class="btn btn-secondary btn-rounded  btn-block btn-lg" data-mdb-ripple-color="#ffffff" style="background-color:rgba(180, 66, 66, 0.575)"> Terminar Compra </button>
+                </div>
+                  
+            </div>
+
+    
+                  <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">CVV</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-cvv"
+                      placeholder=""
+                      required
+                    />
+                    <div class="invalid-feedback">Código de seguridad requerido</div>
                   </div>
 
-                  <div class="col-12">
-                    <label for="contraseña" class="form-label">Contraseña * </label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="contraseña"
-                        placeholder="*******"
-                        required
-                        />
-                    </div>
-
-              </div>
-              <div class="py-5 text-center">
-                <a 
-                  href="./facturacion.html"
-                  type="button" 
-                  class="btn btn-secondary btn-rounded  btn-block btn-lg" 
-                  data-mdb-ripple-color="#ffffff" 
-                  style="background-color:rgba(180, 66, 66, 0.575); color:white; border-color: white;"
-                > 
-                  Iniciar sesión 
-                </a>
-              </div>
+            
               </form>
-
-              <div class="col-12" style="display:flex; justify-content:center;">
-                <button type="button" class="btn btn-link">Recuperar contraseña</button>
-               </div>
-
-              
-            </div>
-            <div class="col-5">
-              <h4 class="mb-3">Comprar sin registro</h4>
-                
-                <div class="col-12">
-                  Comprar sin guardar tus datos
-                   
-               </div>
-            
-              <div class="col-12 py-4">
-                <a 
-                  href="./facturacion.html"
-                  type="button" 
-                  class="btn btn-secondary btn-rounded  btn-block btn-lg" 
-                  data-mdb-ripple-color="#ffffff" 
-                  style="background-color:rgba(180, 66, 66, 0.575); color:white; border-color: white;"
-                > 
-                  Comprar como invitado 
-                </a>
-              </div>
-
-            </div>
-            
-            
-            <div class="col-2">
-              <h4 class="d-flex justify-content-between align-items-center mb-3">
-                <span class="text-primary">Tu carrito</span>
-                <span id="total-quantiy" class="badge bg-primary rounded-pill">0</span>
-              </h4>
-              <ul id="cart-content" class="list-group mb-3">
-              </ul>
             </div>
           </div>
         </main>
@@ -297,5 +324,3 @@
       })()
     </script>
     <script src="../assets/js/custom-general.js"></script>
-  </body>
-</html>
