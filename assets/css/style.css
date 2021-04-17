@@ -4353,11 +4353,17 @@ a.close.disabled {
   border-bottom: 1px solid #ebebeb; }
   .popover-header:empty {
     display: none; }
+#ControlesCarousel img{
+  height: 60vh;
+  object-fit: cover;
 
+}
+#ControlesCarousel{
+  margin: 0 30px;
+}
 .popover-body {
   padding: 0.5rem 0.75rem;
   color: #212529; }
-
 .carousel {
   position: relative; }
 
