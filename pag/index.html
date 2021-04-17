@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <!--  ESTE ES BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="../assets/css/style.css" /><!--  ESTE ES BOOTSTRAP 4 -->
     <script src="../assets/js/jquery.min.js"></script>
-    <link rel="icon" href="../assets/img/iconopag.png" />
+    <link rel="icon" href="../assets/img/iconopag.png" /> <!-- icono pagina -->
     <title>Inicio Pasteleria</title>
   </head>
   <body>
+    <!-- BARRA DE NAVEGACION -->
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
       <a class="navbar-brand" href="./index.html"><img src="../assets/img/LogoNav.png" /></a>
       <button
@@ -48,6 +48,7 @@
         </ul>
       </div>
     </nav>
+    <!-- INICIO CAROUSEL -->
     <div id="ControlesCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -77,16 +78,19 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <!-- CONTENIDO DE LA PAGINA -->
     <div class="maincontent">
       <div class="container">
         <section id="menu">
+          <!-- INICIO BLOQUE MENU-->
           <div class="block menu1">
+            <!-- SELECTOR DE MENU -->
             <div class="buttons-container">
               <a href="#" class="button button--is-active" data-target="MenuPasteles">Pasteles</a>
               <a href="#" class="button button" data-target="PastelesVeganos">Pasteles Veganos</a>
               <a href="#" class="button button" data-target="BebestibleMenu">Bebestibles</a>
-            </div>
-            <!-- Start Menu Pasteles Menu -->
+            </div> 
+            <!-- INICIO MENU PASTELES -->
             <div class="menu menu--is-visible" id="MenuPasteles" data-aos="fade-up">
               <div class="item row align-items-center">
                 <div class="col-sm-3 pr-5">
@@ -205,9 +209,9 @@
                   </button>
                 </div>
               </div>
-            </div>
-            <!-- End Pasteles Menu -->
-            <!-- Start Pasteles Veganos Menu -->
+            </div> 
+            
+            <!-- INICIO MENU PASTELES VEGANOS -->
             <div class="menu" id="PastelesVeganos" data-aos="fade-up">
               <div class="item row align-items-center">
                 <div class="col-sm-3 pr-5">
@@ -329,8 +333,8 @@
                 </div>
               </div>
             </div>
-            <!-- End Pasteles Veganos -->
-            <!-- Start Menu Bebestibles -->
+            
+            <!-- INICIO MENU BEBESTIBLES -->
             <div class="menu" id="BebestibleMenu" data-aos="fade-up">
               <div class="item row align-items-center">
                 <div class="col-sm-3 pr-5">
@@ -443,12 +447,11 @@
                 </div>
               </div>
             </div>
-            <!-- End Menu Bebestible -->
-          </div>
-          <!-- End block -->
+          </div><!-- Fin del Bloque -->
         </section>
       </div>
     </div>
+    <!-- CARRITO -->
     <div class="nav-item my-cart-icon">
       <img src="../assets/img/cart.svg" style="width: 20px" />
       <span class="badge badge-notify my-cart-badge"> </span>
@@ -532,6 +535,7 @@
       </footer>
       <!-- Footer -->
     </div>
+    <!-- SCRIPTS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
