@@ -3,255 +3,167 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/style.css" /> <!--  ESTE ES BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!--  ESTE ES BOOTSTRAP 4 -->
     <script src="../assets/js/jquery.min.js"></script>
     <link rel="icon" href="../assets/img/iconopag.png" />
     <title>Carrito</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
-    <a class="navbar-brand" href="./index.html"
-      ><img src="../assets/img/LogoNav.png"
-    /></a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarsExampleDefault"
-      aria-controls="navbarsExampleDefault"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="./index.html"
-            >Inicio<span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./carrito.html">Carrito</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./contacto.html">Contactanos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./acercade.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
+      <a class="navbar-brand" href="./index.html"><img src="../assets/img/LogoNav.png" /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./carrito.html">Carrito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./acercade.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="./invitado.html">Nosotros</a>
           </li>
-      </ul>
-    </div>
-  </nav>
+        </ul>
+      </div>
+    </nav>
     <section class="maincontent">
       <div class="container">
-        <main>
+        <form>
           <div class="py-5 text-center">
             <h2>Compra como invitado</h2>
           </div>
-          <div class="row g-5">
-              </div>
-              <div class="col-12 row">
-                
-                <div class="col-6">
-                  <label for="firstName" class="form-label">Nombre *</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="firstName"
-                    placeholder=""
-                    value="Ejemplo: Andrés"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Valid first name is required.
-                  </div>
-                </div>
-                <div class="col-6">
-                  <label for="lastName" class="form-label">Apellido * </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="lastName"
-                    placeholder=""
-                    value="Ejemplo: González"
-                    required
-                  />
-                  <div class="invalid-feedback">Ingrese Apellido válido.</div>
-                </div>
-                
-              </div>
-                <div class="col-12">
-                  <label for="address" class="form-label">Dirección *</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="address"
-                    placeholder=" #1234 Avenida Principal"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Ingrese dirección de envío.
-                  </div>
-                </div>
-                
-                <div class="col-12">
-                  <label for="address2" class="form-label"
-                    > Piso o Dpto <span class="text-muted"> (Ej: 2A)</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="address2"
-                    placeholder="(Opcional)"
-                  />
-                </div>
-          <div class="col-12 row">
-              <div class= "col-6"> 
-                  <label for="state" class="form-label"
-                  >Codigo</label>
-                  
-                  <select class="custom-select" id="state" required>
-                      <option value="">+569 </option>
-                      <option>+569</option>
-                      <option>+562</option>
-                      <option>+54</option>
-                  </select>
-              </div>
-              <div class="col-6">
-                  <label for="lastName" class="form-label">Telefono </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="lastName"
-                    placeholder="74660134"
-                    value=""
-                    required
-                  />
-              </div>
-          </div>
-          <div class="col-12">
-            <label for="email" class="form-label"
-              >Email <span class="text-muted"></span></label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="correo@ejemplo.com"
-            />
-            <div class="invalid-feedback">
-              Ingrese correo electrónico.
+
+          <div class="row g-3">
+            <div class="col-6">
+              <label for="firstName" class="form-label">Nombre *</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="Ejemplo: Andrés" required />
+              <div class="invalid-feedback">Valid first name is required.</div>
+            </div>
+
+            <div class="col-6">
+              <label for="lastName" class="form-label">Apellido * </label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="Ejemplo: González" required />
+              <div class="invalid-feedback">Ingrese Apellido válido.</div>
             </div>
           </div>
+
+          <div class="row g-3">
+            <div class="col-12">
+              <label for="address" class="form-label">Dirección *</label>
+              <input type="text" class="form-control" id="address" placeholder=" #1234 Avenida Principal" required />
+              <div class="invalid-feedback">Ingrese dirección de envío.</div>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-12">
+              <label for="address2" class="form-label"> Piso o Dpto <span class="text-muted"> (Ej: 2A)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="(Opcional)" />
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-6">
+              <label for="state" class="form-label">Codigo</label>
+              <select class="custom-select" id="state" required>
+                <option value="">+569</option>
+                <option>+569</option>
+                <option>+562</option>
+                <option>+54</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label for="lastName" class="form-label">Telefono </label>
+              <input type="text" class="form-control" id="lastName" placeholder="74660134" value="" required />
+            </div>
+          </div>
+          `
+          <div class="row">
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-muted"></span></label>
+              <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com" />
+              <div class="invalid-feedback">Ingrese correo electrónico.</div>
+            </div>
+          </div>
+
           <hr class="my-4" />
-          <div class="col-12 row">
+
+          <div class="row">
             <div class="col-6">
               <h4 class="mb-3">Pago</h4>
               <div class="my-3">
                 <div class="form-check">
-                  <input
-                    id="credit"
-                    name="paymentMethod"
-                    type="radio"
-                    class="form-check-input"
-                    checked
-                    required
-                  />
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required />
                   <label class="form-check-label" for="credit">Tarjeta de crédito</label>
                 </div>
                 <div class="form-check">
-                  <input
-                    id="debit"
-                    name="paymentMethod"
-                    type="radio"
-                    class="form-check-input"
-                    required
-                  />
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required />
                   <label class="form-check-label" for="debit">Débito</label>
                 </div>
                 <div class="form-check">
-                  <input
-                    id="paypal"
-                    name="paymentMethod"
-                    type="radio"
-                    class="form-check-input"
-                    required
-                  />
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required />
                   <label class="form-check-label" for="paypal">PayPal</label>
                 </div>
               </div>
             </div>
-            <div class="col-6 row">
-              <div class ="col-12">
+            <div class="col-6 px-0">
+              <div class="col-12">
                 <label for="cc-name" class="form-label">Nombre en tarjeta</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="cc-name"
-                  placeholder=""
-                  required
-                />
+                <input type="text" class="form-control" id="cc-name" placeholder="" required />
                 <small class="text-muted"></small>
                 <div class="invalid-feedback">Nombre de tarjeta requerido</div>
               </div>
               <div class="col-12">
-                <label for="cc-number" class="form-label"
-                  >Número de tarjeta de crédito</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="cc-number"
-                  placeholder=""
-                  required
-                />
-                <div class="invalid-feedback">
-                  Tarjeta de crédito inválida
-                </div>
+                <label for="cc-number" class="form-label">Número de tarjeta de crédito</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required />
+                <div class="invalid-feedback">Tarjeta de crédito inválida</div>
               </div>
             </div>
           </div>
-          <div class="col-12 row">
-          <div class="col-6">
-            <label for="cc-expiration" class="form-label">Fecha de Expiración</label>
-            <input
-              type="text"
-              class="form-control"
-              id="cc-expiration"
-              placeholder=""
-              required
-            />
-            <div class="invalid-feedback">Fecha de expiración requerida</div>
-        </div>
-        <div class="col-6">
-          <label for="cc-cvv" class="form-label">CVV</label>
-          <input
-            type="text"
-            class="form-control"
-            id="cc-cvv"
-            placeholder=""
-            required
-          />
-          <div class="invalid-feedback">Código de seguridad requerido</div>
-        </div>
-      </div>
-        <div class="py-5 text-center">
-          <button type="button" class="btn btn-secondary btn-rounded  btn-block btn-lg" data-mdb-ripple-color="#ffffff" style="background-color:rgba(180, 66, 66, 0.575)"> Terminar Compra </button>
-        </div>
-          
-        </div>       
+
+          <div class="row g-3">
+            <div class="col-6">
+              <label for="cc-expiration" class="form-label">Fecha de Expiración</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required />
+              <div class="invalid-feedback">Fecha de expiración requerida</div>
             </div>
-            
-              </form>
+            <div class="col-6">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required />
+              <div class="invalid-feedback">Código de seguridad requerido</div>
             </div>
           </div>
-        </main>
+
+          <div class="py-5 text-center">
+            <button
+              type="button"
+              class="btn btn-secondary btn-rounded btn-block btn-lg"
+              data-mdb-ripple-color="#ffffff"
+              style="background-color: rgba(180, 66, 66, 0.575)"
+            >
+              Terminar Compra
+            </button>
+          </div>
+        </form>
       </div>
     </section>
     <script src="../assets/js/mycart.js"></script>
@@ -260,21 +172,9 @@
       <img src="../assets/img/cart.svg" style="width: 20px" />
       <span class="badge badge-notify my-cart-badge"> </span>
     </div>
-    <template>
-      <li class="list-group-item d-flex justify-content-between lh-sm">
-          <div>
-              <h6 class="my-0" data->Nombre del prodcuto</h6>
-              <small class="text-muted">Descripcion</small>
-          </div>
-          <span class="text-muted">$12</span>
-      </li>
-    </template>
     <div class="container my-8">
       <!-- Footer -->
-      <footer
-              class="text-center text-lg-start text-white"
-              style="background-color: #5c0518d0"
-              >   
+      <footer class="text-center text-lg-start text-white" style="background-color: #5c0518d0">
         <!-- links  -->
         <section class="">
           <div class="container text-center text-md-start mt-5">
@@ -285,49 +185,48 @@
                 <!-- Content -->
                 <h6 class="text-uppercase fw-bold">EL RINCÓN DEL PASTEL</h6>
                 <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #ffffffd0 ; height: 2px"
-                    />
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #ffffffd0; height: 2px"
+                />
                 <p>
-                  Nuestra empresa encargada de traer los mejores pasteles incluyendo venganos
-                  lleva mas de 30 años alegrando a la gente con nuestros productos de buena calidad y preparación.
+                  Nuestra empresa encargada de traer los mejores pasteles incluyendo venganos lleva mas de 30 años
+                  alegrando a la gente con nuestros productos de buena calidad y preparación.
                 </p>
               </div>
               <!-- Grid column -->
-    
+
               <!-- Grid column -->
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold">PRODUCTOS</h6>
                 <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #ffffffd0; height: 2px"
-                    />
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #ffffffd0; height: 2px"
+                />
                 <p>
-                    
                   <a href="./index.html#menu" class="text-white">Pasteles Veganos</a>
                 </p>
                 <p>
                   <a href="./index.html#menu" class="text-white">Pasteles</a>
                 </p>
-                <p> 
+                <p>
                   <a href="./index.html#menu" class="text-white">Bebestibles</a>
                 </p>
               </div>
               <!-- Grid column -->
-    
+
               <!-- Grid column -->
 
               <!-- Grid column -->
-    
+
               <!-- Grid column -->
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold">Contacto</h6>
                 <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color:#ffffffd0; height: 2px"
-                    />
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #ffffffd0; height: 2px"
+                />
                 <p><i class="fas fa-home mr-3"></i> Santiago,Chile</p>
                 <p><i class="fas fa-envelope mr-3"></i> elrincondelplacer@gmail.com</p>
                 <p><i class="fas fa-phone mr-3"></i> + 569 3318 1391</p>
@@ -339,16 +238,11 @@
           </div>
         </section>
         <!-- Section: Links  -->
-    
+
         <!-- Copyright -->
-        <div
-            class="text-center p-3"
-            style="background-color: rgba(180, 66, 66, 0.575)"
-            >
+        <div class="text-center p-3" style="background-color: rgba(180, 66, 66, 0.575)">
           © 2021 Copyright:
-          <a class="text-white" href=
-            >EL rincón del pastel</a
-            >
+          <a class="text-white" href="index.html">EL rincón del pastel</a>
         </div>
         <!-- Copyright -->
       </footer>
@@ -360,10 +254,10 @@
       AOS.init();
     </script>
     <script>
-      (function() {
+      (function () {
         var products = JSON.parse(localStorage.getItem("purcharse") || "[]");
-        var container = document.getElementById('cart-content');
-        var itemLabel = document.getElementById('total-quantiy');
+        var container = document.getElementById("cart-content");
+        var itemLabel = document.getElementById("total-quantiy");
 
         var totalPrice = 0;
         var totalQuantity = 0;
@@ -373,12 +267,12 @@
           return `
             <li class="list-group-item d-flex justify-content-between lh-sm">
               <div>
-                  <h6 class="my-0">${ product.name } (${product.quantity})</h6>
-                  <small class="text-muted">${ product.summary }</small>
+                  <h6 class="my-0">${product.name} (${product.quantity})</h6>
+                  <small class="text-muted">${product.summary}</small>
               </div>
-              <span class="text-muted">$${ product.price }</span>
+              <span class="text-muted">$${product.price}</span>
             </li>
-          `
+          `;
         }
         function createTotalHTML(total) {
           return `
@@ -386,18 +280,20 @@
               <span>Total (CLP)</span>
               <strong>$${total}</strong>
           </li>
-          `
+          `;
         }
-        products.forEach(product => {
+        products.forEach((product) => {
           totalPrice += Number(product.price) * Number(product.quantity);
           totalQuantity += Number(product.quantity);
 
-          container.insertAdjacentHTML('beforeend', createItemHTML(product))
+          container.insertAdjacentHTML("beforeend", createItemHTML(product));
         });
 
-        container.insertAdjacentHTML('beforeend', createTotalHTML(totalPrice))
+        container.insertAdjacentHTML("beforeend", createTotalHTML(totalPrice));
 
         itemLabel.innerText = totalQuantity;
-      })()
+      })();
     </script>
-    <script src="../assets/js/custom-general.js"></script></body></html>
+    <script src="../assets/js/custom-general.js"></script>
+  </body>
+</html>
