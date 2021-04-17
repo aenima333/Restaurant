@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -10,185 +9,210 @@
     <script src="../assets/js/jquery.min.js"></script>
     <link rel="icon" href="../assets/img/iconopag.png" />
     <title>contacto</title>
-</head>
-<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
-    <a class="navbar-brand" href="./index.html"><img src="../assets/img/LogoNav.png" /></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="./index.html">Inicio<span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./carrito.html">Carrito</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./registro.html">Registro</a>
-             </li>   
-            <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contactenos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./acercade.html">Nosotros</a>
-            </li>
-        </ul>
-    </div>
-  </nav>
-
+  </head>
   <body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+      <a class="navbar-brand" href="./index.html"
+        ><img src="../assets/img/LogoNav.png"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html"
+              >Inicio<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./carrito.html">Carrito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./registro.html">Registro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contactenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./acercade.html">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
     <div class="container">
       <main>
-          <div class="py-5 text-center">
-              <img class="d-block mx-auto mb-4" src="../assets/img/header.png" />
-              <h2>Contáctenos</h2>
-              <p class="breveintro">
-                 Déjanos tu pregunta o comentario y nos pondremos en contacto contigo 
-              </p>
-          </div>
-          
-
-              <div class="col-md-7 col-lg-8">
-                  <form class="needs-validation" novalidate>
-                      <div class="row g-3">
-                          <div class="col-sm-6">
-                              <label for="Nombre" class="form-label">Nombre</label>
-                              <input type="text" class="form-control" id="Nombre" placeholder="Escribe tu nombre" required />
-                              <div class="invalid-feedback">
-                                  Porfavor ingresa Tu Nombre.
-                              </div>
-                          </div>
-
-                          <div class="col-sm-6">
-                              <label for="correo" class="form-label">Correo electrónico*</label>
-                              <div class="input-group has-validation">
-                                  <span class="input-group-text">@</span>
-                                  <input type="text" class="form-control" id="correo" placeholder="pasteleria@gmail.com" required />
-                                  <div class="invalid-feedback">
-                                      Porfavor ingresa tu correo.
-                                  </div>
-                              </div>
-                          </div> 
-                          <div class="col-sm-6">
-                            <label for="Apellido" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="Apellido" placeholder="Ecribe tu apellido" required />
-                            <div class="invalid-feedback">
-                                Porfavor ingresa tu Apellido.
-                            </div>
-                        </div>
-                          <div class="col-sm-6">
-                            <label for="exampleFormControlTextarea1">Escriba su comentario</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" cols="50" ></textarea>
-                          </div> 
-                     </div>
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="../assets/img/header.png" />
+          <h2>Contáctenos</h2>
+          <p class="breveintro">
+            Déjanos tu pregunta o comentario y nos pondremos en contacto contigo
+          </p>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="Nombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Nombre"
+                  placeholder="Escribe tu nombre"
+                  required
+                />
+                <div class="invalid-feedback">Porfavor ingresa Tu Nombre.</div>
               </div>
-              
-            <hr class="my-4" />
-            <h6 class="col-sm-6">Te contáctaremos a través de correo electrónico una vez enviada la información</h6>
 
-            <hr class="my-4" />
-
-          </div>
-
-            <div class="py-5 text-center">
-        
-                <button type="button" class="btn btn-danger    " data-mdb-ripple-color="#fba888"> Enviar </button>
+              <div class="col-sm-6">
+                <label for="correo" class="form-label"
+                  >Correo electrónico*</label
+                >
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="correo"
+                    placeholder="pasteleria@gmail.com"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Porfavor ingresa tu correo.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="Apellido" class="form-label">Apellido</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Apellido"
+                  placeholder="Ecribe tu apellido"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Porfavor ingresa tu Apellido.
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="exampleFormControlTextarea1"
+                  >Escriba su comentario</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="6"
+                  cols="50"
+                ></textarea>
+              </div>
             </div>
-          
+            <hr class="my-4" />
+            <h6 class="col-sm-10">
+              Te contáctaremos a través de correo electrónico una vez enviada la información
+            </h6>
+            <hr class="my-4" />
+            <div class="py-5 text-center">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-mdb-ripple-color="#fba888"
+              >
+                Enviar
+              </button>
+            </div>
           </form>
         </div>
-      </div>
-    </main>
-    <div class="container my-8">
-        <!-- Footer -->
-        <footer
-                class="text-center text-lg-start text-white"
-                style="background-color: #5c0518d0"
-                >   
-          <!-- links  -->
-          <section class="">
-            <div class="container text-center text-md-start mt-5">
-              <!-- Grid row -->
-              <div class="row mt-3">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                  <!-- Content -->
-                  <h6 class="text-uppercase fw-bold">EL RINCÓN DEL PASTEL</h6>
-                  <hr
-                      class="mb-4 mt-0 d-inline-block mx-auto"
-                      style="width: 60px; background-color: #ffffffd0 ; height: 2px"
-                      />
-                  <p>
-                    Nuestra empresa encargada de traer los mejores pasteles incluyendo venganos
-                    lleva mas de 30 años alegrando a la gente con nuestros productos de buena calidad y preparación.
-                  </p>
-                </div>
-                <!-- Grid column -->
-      
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold">PRODUCTOS</h6>
-                  <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #ffffffd0; height: 2px"/>
-                  <p>   
-                    <a href="./index.html#menu" class="text-white">Pasteles Veganos</a>
-                  </p>
-                  <p>
-                    <a href="./index.html#menu" class="text-white">Pasteles</a>
-                  </p>
-                  <p> 
-                    <a href="./index.html#menu" class="text-white">Bebestibles</a>
-                  </p>
-                </div>
-                <!-- Grid column -->
-      
-                <!-- Grid column -->
+      </main>
+    </div>
 
-                <!-- Grid column -->
-      
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold">Contacto</h6>
-                  <hr class="mb-4 mt-0 d-inline-block mx-auto" 
-                      style="width: 60px; background-color:#ffffffd0; height: 2px"
-                  />
-                  <p><i class="fas fa-home mr-3"></i> Santiago,Chile</p>
-                  <p><i class="fas fa-envelope mr-3"></i> elrincondelplacer@gmail.com</p>
-                  <p><i class="fas fa-phone mr-3"></i> + 569 3318 1391</p>
-                  <p><i class="fas fa-print mr-3"></i> + 569 3754 6481</p>
-                </div>
-                <!-- Grid column -->
+    <div class="container my-8">
+      <!-- Footer -->
+      <footer
+        class="text-center text-lg-start text-white"
+        style="background-color: #5c0518d0"
+      >
+        <!-- links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold">EL RINCÓN DEL PASTEL</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #ffffffd0; height: 2px"
+                />
+                <p>
+                  Nuestra empresa encargada de traer los mejores pasteles
+                  incluyendo venganos lleva mas de 30 años alegrando a la gente
+                  con nuestros productos de buena calidad y preparación.
+                </p>
               </div>
-              <!-- Grid row -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">PRODUCTOS</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #ffffffd0; height: 2px"
+                />
+                <p>
+                  <a href="./index.html#menu" class="text-white"
+                    >Pasteles Veganos</a
+                  >
+                </p>
+                <p>
+                  <a href="./index.html#menu" class="text-white">Pasteles</a>
+                </p>
+                <p>
+                  <a href="./index.html#menu" class="text-white">Bebestibles</a>
+                </p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Contacto</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #ffffffd0; height: 2px"
+                />
+                <p><i class="fas fa-home mr-3"></i> Santiago,Chile</p>
+                <p>
+                  <i class="fas fa-envelope mr-3"></i>
+                  elrincondelplacer@gmail.com
+                </p>
+                <p><i class="fas fa-phone mr-3"></i> + 569 3318 1391</p>
+                <p><i class="fas fa-print mr-3"></i> + 569 3754 6481</p>
+              </div>
             </div>
-          </section>
-          <!-- Section: Links  -->
-      
-          <!-- Copyright -->
-          <div
-               class="text-center p-3"
-               style="background-color: rgba(180, 66, 66, 0.575)"
-               >
-            © 2021 Copyright:
-            <a class="text-white">EL rincón del pastel</a
-              >
           </div>
-          <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
-      </div>
+        </section>
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(180, 66, 66, 0.575)"
+        >
+          © 2021 Copyright:
+          <a class="text-white">EL rincón del pastel</a>
+        </div>
+      </footer>
+    </div>
 
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <script src="js/custom-general.js"></script>
-    </body>
-
+  </body>
 </html>
