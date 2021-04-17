@@ -54,7 +54,6 @@
           <div class="py-5 text-center">
             <h2>Registro</h2>
           </div>
-    
             <div class="col-md-7 col-lg-8">
               <form class="needs-validation" novalidate>
                 <div class="row g-3">
@@ -72,7 +71,6 @@
                       Valid first name is required.
                     </div>
                   </div>
-    
                   <div class="col-sm-6">
                     <label for="lastName" class="form-label">Apellido * </label>
                     <input
@@ -85,8 +83,6 @@
                     />
                     <div class="invalid-feedback">Ingrese Apellido válido.</div>
                   </div>
-    
-    
                   <div class="col-12">
                     <label for="email" class="form-label"
                       >Email * <span class="text-muted">(Con el email se inicia sesion)</span></label
@@ -101,7 +97,6 @@
                       Ingrese correo electrónico.
                     </div>
                   </div>
-
                   <div class="col-12">
                     <label for="email" class="form-label"
                       >Confirmar email * <span class="text-muted"></span></label
@@ -116,7 +111,6 @@
                       Ingrese correo electrónico.
                     </div>
                   </div>
-    
                   <div class="col-12">
                     <label for="address" class="form-label">Dirección *</label>
                     <input
@@ -130,7 +124,6 @@
                       Ingrese dirección de envío.
                     </div>
                   </div>
-    
                   <div class="col-6">
                     <label for="address2" class="form-label"
                       > Piso o Dpto<span class="text-muted">(Ej: 2A)</span></label
@@ -142,15 +135,11 @@
                       placeholder="(Opcional)"
                     />
                   </div>
-    
                 <hr class="my-4" />
-        
                 
             <div class="col-6 row">
-
                 <div class= "col-6"> 
                     <label for="state" class="form-label">Codigo</label>
-                    
                     <select class="custom-select" id="state" required>
                         <option value="">+569 </option>
                         <option>+569</option>
@@ -158,7 +147,6 @@
                         <option>+54</option>
                     </select>
                 </div>
-
                 <div class="col-6">
                     <label for="lastName" class="form-label">Telefono </label>
                     <input
@@ -170,9 +158,7 @@
                       required
                     />
                 </div>
-
             </div>
-
             <div class="col-12">
                 <label for="contraseña" class="form-label">Contraseña * </label>
                   <input
@@ -183,7 +169,6 @@
                     required
                     />
                 </div>
-
             <div class="col-12">
                 <label for="contraseña" class="form-label">Confirmar contraseña *</label>
                 <input
@@ -201,7 +186,6 @@
             <button type="button" class="btn btn-secondary btn-rounded  btn-block btn-lg" data-mdb-ripple-color="#ffffff" style="background-color:rgba(180, 66, 66, 0.575)"> Registrarme </button>
           </div>
                 
-
             </div>
                     <small class="text-muted"></small>
                     <div class="invalid-feedback">Se requiere contraseña de usuario.</div>
@@ -212,15 +196,12 @@
         </main>
       </div>
     </section>
-
     <script src="../assets/js/mycart.js"></script>
     <script src="../assets/js/mycart-custom.js"></script>
-
     <div class="nav-item my-cart-icon">
       <img src="../assets/img/cart.svg" style="width: 20px" />
       <span class="badge badge-notify my-cart-badge"> </span>
     </div>
-
     <template>
       <li class="list-group-item d-flex justify-content-between lh-sm">
           <div>
@@ -343,7 +324,6 @@
             </li>
           `
         }
-
         function createTotalHTML(total) {
           return `
           <li class="list-group-item d-flex justify-content-between">
@@ -352,7 +332,6 @@
           </li>
           `
         }
-
         products.forEach(product => {
           totalPrice += Number(product.price) * Number(product.quantity);
           totalQuantity += Number(product.quantity);

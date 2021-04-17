@@ -38,7 +38,6 @@
           <div class="py-5 text-center">
             <h2>Carrito</h2>
           </div>
-    
           <div class="row g-5">
             <div class="col-5">
               <h4 class="mb-3">Ingresa tu cuenta</h4>
@@ -59,7 +58,6 @@
                     </div>
                     
                   </div>
-
                   <div class="col-12">
                     <label for="contraseña" class="form-label">Contraseña * </label>
                       <input
@@ -70,7 +68,6 @@
                         required
                         />
                     </div>
-
               </div>
               <div class="py-5 text-center">
                 <a 
@@ -83,21 +80,20 @@
                 </a>
               </div>
               </form>
-
               <div class="col-12" style="display:flex; justify-content:center;">
                 <button type="button" class="btn btn-link">Recuperar contraseña</button>
               </div>
             
             </div>
-            <div class="col-5">
-              <h4 class="mb-3">Comprar sin registro</h4>
+            <div class="col-4">
+              <h4 class="mb-5">Comprar sin registro</h4>
                 
                 <div class="col-12">
                   Comprar sin guardar tus datos
                 
               </div>
             
-              <div class="col-12 py-4">
+              <div class="col-9 py-4">
                 <a 
                   href="./invitado.html"
                   type="button" 
@@ -108,11 +104,9 @@
                   Comprar como invitado 
                 </a>
               </div>
-
             </div>
             
-            
-            <div class="col-2">
+            <div class="col-3">
               <h4 class="d-flex justify-content-between align-items-center mb-3">
                 <span class="text-primary">Tu carrito</span>
                 <span id="total-quantiy" class="badge bg-primary rounded-pill">0</span>
@@ -124,15 +118,12 @@
         </main>
       </div>
     </section>
-
     <script src="../assets/js/mycart.js"></script>
     <script src="../assets/js/mycart-custom.js"></script>
-
     <div class="nav-item my-cart-icon">
       <img src="../assets/img/cart.svg" style="width: 20px" />
       <span class="badge badge-notify my-cart-badge"> </span>
     </div>
-
     <template>
       <li class="list-group-item d-flex justify-content-between lh-sm">
           <div>
@@ -246,7 +237,6 @@
             </li>
           `
         }
-
         function createTotalHTML(total) {
           return `
           <li class="list-group-item d-flex justify-content-between">
@@ -255,7 +245,6 @@
           </li>
           `
         }
-
         products.forEach(product => {
           totalPrice += Number(product.price) * Number(product.quantity);
           totalQuantity += Number(product.quantity);
