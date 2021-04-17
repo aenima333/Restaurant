@@ -1,642 +1,626 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"/><!-- bootstrap 5 -->/><!-- bootstrap 5 -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <script src="../assets/js/jquery.min.js"></script>
-    <link rel="icon" href="../assets/img/iconopag.png" />
-    <title>Inicio Pasteleria</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
-      <a class="navbar-brand" href="./index.html"
-        ><img src="../assets/img/LogoNav.png"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./index.html"
-              >Inicio<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./carrito.html">Carrito</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./registro.html">Registro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contactanos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./acercade.html">Nosotros</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div id="ControlesCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner" style="height: 1000px">
-        <div class="carousel-item active">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" /><!--  ESTE ES BOOTSTRAP 4 -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <link rel="icon" href="../assets/img/iconopag.png" />
+  <title>Inicio Pasteleria</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+    <a class="navbar-brand" href="./index.html"
+      ><img src="../assets/img/LogoNav.png"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html"
+            >Inicio<span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./carrito.html">Carrito</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./registro.html">Registro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html">Contactanos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./acercade.html">Nosotros</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="ControlesCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">        
           <img
             src="../assets/img/fondo-pastel.png"
             class="d-block w-100"
-            alt="..."
+            alt=""
           />
-        </div>
+          <div class="carousel-caption" >
+                          <h1 class="display-5 text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+                Rincón del Pastel<br>
+            </h1>
+                          <p class="lead text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                No hay atención presencial debido a la pandemia, pero puedes pedir delivery a la puerta de tu hogar!.
+            </p>
+          </div>
+      </div>
         <div class="carousel-item">
           <img
             src="../assets/img/panadereichon.png"
             class="d-block w-100"
-            alt="..."
+            alt=""
           />
         </div>
         <div class="carousel-item">
           <img
             src="../assets/img/nosotros_img.png"
             class="d-block w-100"
-            alt="..."
+            alt=""
           />
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#ControlesCarousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#ControlesCarousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+  <a class="carousel-control-prev" href="#ControlesCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#ControlesCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
 
-    <div class="maincontent">
-      <div class="container">
-        <section id="menu">
-          <div class="block menu1">
-            <div class="buttons-container">
-              <a
-                href="#"
-                class="button button--is-active"
-                data-target="MenuPasteles"
-                >Pasteles</a
-              >
-              <a href="#" class="button button" data-target="PastelesVeganos"
-                >Pasteles Veganos</a
-              >
-              <a href="#" class="button button" data-target="BebestibleMenu"
-                >Bebestibles</a
-              >
-            </div>
-            <!-- Start Menu Pasteles Menu -->
-            <div
-              class="menu menu--is-visible"
-              id="MenuPasteles"
-              data-aos="fade-up"
+  <div class="maincontent">
+    <div class="container">
+      <section id="menu">
+        <div class="block menu1">
+          <div class="buttons-container">
+            <a
+              href="#"
+              class="button button--is-active"
+              data-target="MenuPasteles"
+              >Pasteles</a
             >
-              <div class="item row align-items-center">
-                <div class="col-sm-3 pr-5">
-                  <a href="descripcion_producto.html">
-                    <img
-                      class="product-img"
-                      src="../assets/img/TortaArcoiris.png"
-                    />
-                  </a>
-                </div>
-                <div class="details col-sm-9">
-                  <div class="item__header">
-                    <a href="descripcion_producto.html">
-                      <h3 class="item__title">Torta de Arcoiris</h3>
-                    </a>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$10000</span>
-                  </div>
-                  <p class="item__description">
-                    Rico postre elaborado con bizcochos de colores y cobertura
-                    de crema de queso, perfecto para regalo de cumpleaños.
-                  </p>
-                  <button
-                    class="btn btn-sm btn-outline-primary my-cart-btn"
-                    data-id="1"
-                    data-name="Torta Arcoiris"
-                    data-price="10000"
-                    data-quantity="1"
-                    data-image="../assets/img/TortaArcoiris.png"
-                  >
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-              <div class="item row align-items-center">
-                <div class="col-sm-3 pr-5">
-                  <a href="descripcion_producto.html">
-                    <img
-                      class="product-img"
-                      src="../assets/img/CremBrule.png"
-                    />
-                  </a>
-                </div>
-                <div class="details col-sm-9">
-                  <div class="item__header">
-                    <a href="descripcion_producto.html">
-                      <h3 class="item__title">Creme Brulee</h3>
-                    </a>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$3000</span>
-                  </div>
-                  <p class="item__description">
-                    La crème brûlée es uno de los postres franceses más famosos
-                    que existe, incluye vainilla, caramelo, nata con ázucar entre
-                    sus ingredientes.
-                  </p>
-                  <button
-                    class="btn btn-sm btn-outline-primary my-cart-btn"
-                    data-id="2"
-                    data-name="Creme Brulee"
-                    data-price="3000"
-                    data-quantity="1"
-                    data-image="../assets/img/CremBrule.png"
-                  >
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-              <div class="item row align-items-center">
-                <div class="col-sm-3 pr-5">
-                  <a href="descripcion_producto.html">
-                    <img
-                      class="product-img"
-                      src="../assets/img/Cheesecake.png"
-                    />
-                  </a>
-                </div>
-                <div class="details col-sm-9">
-                  <div class="item__header">
-                    <a href="descripcion_producto.html">
-                      <h3 class="item__title">Cheesecake con Flan</h3>
-                    </a>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$3000</span>
-                  </div>
-                  <p class="item__description">
-                    Una deliciosa mezcla de dos texturas cremosas que combina lo
-                    mejor de dos mundos.
-                  </p>
-                  <button
-                    class="btn btn-sm btn-outline-primary my-cart-btn"
-                    data-id="3"
-                    data-name="FlanCheese"
-                    data-price="3000"
-                    data-quantity="1"
-                    data-image="../assets/img/Cheesecake.png"
-                  >
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-              <div class="item row align-items-center">
-                <div class="col-sm-3 pr-5">
-                  <a href="descripcion_producto.html">
-                    <img
-                      class="product-img"
-                      src="../assets/img/TortaAlmendra.png"
-                    />
-                  </a>
-                </div>
-                <div class="details col-sm-9">
-                  <div class="item__header">
-                    <a href="descripcion_producto.html">
-                      >
-                      <h3 class="item__title">Torta de Moka y Almendras</h3>
-                    </a>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$5500</span>
-                  </div>
-                  <p class="item__description">
-                    Rica torta hecha en base de moka con topping de almendras.
-                  </p>
-                  <button
-                    class="btn btn-sm btn-outline-primary my-cart-btn"
-                    data-id="4"
-                    data-name="Torta de Almendras"
-                    data-price="5500"
-                    data-quantity="1"
-                    data-image="../assets/img/TortaAlmendra.png"
-                  >
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- End Pasteles Menu -->
-            <!-- Start Pasteles Veganos Menu -->
-            <div class="menu" id="PastelesVeganos" data-aos="fade-up">
-              <div class="item row align-items-center">
-                <div class="col-sm-3 pr-5">
-                  <a href="descripcion_producto.html">
-                    <img class="product-img" src="../assets/img/LemonPie.png" />
-                  </a>
-                </div>
-                <div class="details col-sm-9">
-                  <div class="item__header">
-                    <a href="descripcion_producto.html">
-                      <h3 class="item__title">Pie de Limon</h3>
-                    </a>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$4000</span>
-                  </div>
-                  <p class="item__description">
-                    Rico Pie de Limon hecho 100% sólo con ingredientes de origen
-                    vegetal, desde el crust (la masa del pie) hasta la crema y
-                    el relleno.
-                  </p>
-                  <button
-                    class="btn btn-sm btn-outline-primary my-cart-btn"
-                    data-id="1"
-                    data-name="Pie de Limon"
-                    data-price="4000"
-                    data-quantity="1"
-                    data-image="../assets/img/LemonPie.png"
-                  >
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-              <div class="item row align-items-center">
-                <div class="col-sm-3 pr-5">
-                  <a href="descripcion_producto.html">
-                    <img class="product-img" src="../assets/img/MintCake.png" />
-                  </a>
-                </div>
-                <div class="details col-sm-9">
-                  <div class="item__header">
-                    <a href="descripcion_producto.html">
-                      <h3 class="item__title">Tarta de Menta</h3>
-                    </a>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$5000</span>
-                  </div>
-                  <p class="item__description">
-                    Compuesta por un bizcocho de chocolate, crema de chocolate,
-                    una sabrosa crema de menta.
-                  </p>
-                  <button
-                    class="btn btn-sm btn-outline-primary my-cart-btn"
-                    data-id="2"
-                    data-name="Tarta de Menta Vegan"
-                    data-price="5000"
-                    data-quantity="1"
-                    data-image="../assets/img/MintCake.png"
-                  >
-                    Añadir al carrito
-                  </button>
-                </div>
-                s
-              </div>
-              <div class="item row align-items-center">
-                <div class="col-sm-3 pr-5">
-                  <a href="descripcion_producto.html">
-                    <img
-                      class="product-img"
-                      src="../assets/img/TartaZana.png"
-                    />
-                  </a>
-                </div>
-                <div class="details col-sm-9">
-                  <div class="item__header">
-                    <a href="descripcion_producto.html">
-                      <h3 class="item__title">Tarta de Zanahoria</h3>
-                    </a>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$2500</span>
-                  </div>
-                  <p class="item__description">
-                    Buena pinta, agradable textura, suave gusto y vitaminas
-                    destacadas A, E y K. Lo tiene todo!
-                  </p>
-                  <button
-                    class="btn btn-sm btn-outline-primary my-cart-btn"
-                    data-id="3"
-                    data-name="Tarta de zanahoria vegana"
-                    data-price="2500"
-                    data-quantity="1"
-                    data-image="../assets/img/TartaZana.png"
-                  >
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-              <div class="item row align-items-center">
-                <div class="col-sm-3 pr-5">
-                  <a href="descripcion_producto.html">
-                    <img
-                      class="product-img"
-                      src="../assets/img/ChocolateVegan.png"
-                    />
-                  </a>
-                </div>
-                <div class="details col-sm-9">
-                  <div class="item__header">
-                    <a href="descripcion_producto.html">
-                      <h3 class="item__title">Pastel Chocolate Vegano</h3>
-                    </a>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$7000</span>
-                  </div>
-                  <p class="item__description">
-                    Es el pastel de chocolate más delicioso que hayas probado,
-                    más suave y chocolatoso, lo mejor de todo: libre de
-                    productos animales, libre de grasas trans o azúcares
-                    refinadas.
-                  </p>
-                  <button
-                    class="btn btn-sm btn-outline-primary my-cart-btn"
-                    data-id="4"
-                    data-name="Pastel Chocolate Vegano"
-                    data-price="7000"
-                    data-quantity="1"
-                    data-image="../assets/img/ChocolateVegan.png"
-                  >
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- End Pasteles Veganos -->
-            <!-- Start Menu Bebestibles -->
-            <div class="menu" id="BebestibleMenu" data-aos="fade-up">
-              <div class="item row align-items-center">
-                <div class="col-sm-3 pr-5">
-                  <a href="descripcion_producto.html">
-                    <img
-                      class="product-img"
-                      src="../assets/img/Cappuccino-1.png"
-                    />
-                  </a>
-                </div>
-                <div class="details col-sm-9">
-                  <div class="item__header">
-                    <a href="descripcion_producto.html">
-                      <h3 class="item__title">Cappuccino</h3>
-                    </a>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$2500</span>
-                  </div>
-                  <p class="item__description">
-                    Cappucino hecho con los mejores granos de café, opción con
-                    leche vegana
-                  </p>
-                  <button
-                    class="btn btn-sm btn-outline-primary my-cart-btn"
-                    data-id="1"
-                    data-name="Cappucino"
-                    data-price="2500"
-                    data-quantity="1"
-                    data-image="../assets/img/cappuccino-1.png"
-                  >
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-              <div class="item row align-items-center">
-                <div class="col-sm-3 pr-5">
-                  <a href="descripcion_producto.html">
-                    <img
-                      class="product-img"
-                      src="../assets/img/Limonada-1.png"
-                    />
-                  </a>
-                </div>
-                <div class="details col-sm-9">
-                  <div class="item__header">
-                    <a href="descripcion_producto.html">
-                      <h3 class="item__title">Limonada</h3>
-                    </a>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$2000</span>
-                  </div>
-                  <p class="item__description">
-                    Limonada de limon de pica con hojas de menta
-                  </p>
-                  <button
-                    class="btn btn-sm btn-outline-primary my-cart-btn"
-                    data-id="2"
-                    data-name="Limonada"
-                    data-price="2000"
-                    data-quantity="1"
-                    data-image="../assets/img/Limonada-1.png"
-                  >
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-              <div class="item row align-items-center">
-                <div class="col-sm-3 pr-5">
-                  <a href="descripcion_producto.html">
-                    <img class="product-img" src="../assets/img/Coca-1.png" />
-                  </a>
-                </div>
-                <div class="details col-sm-9">
-                  <div class="item__header">
-                    <a href="descripcion_producto.html">
-                      <h3 class="item__title">Bebidas clasicas</h3>
-                    </a>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$1000</span>
-                  </div>
-                  <p class="item__description">
-                    Trabajamos con la linea The Company Coca-Cola y CCU.
-                  </p>
-                  <button
-                    class="btn btn-sm btn-outline-primary my-cart-btn"
-                    data-id="3"
-                    data-name="Coca Cola"
-                    data-price="1000"
-                    data-quantity="1"
-                    data-image="../assets/img/Coca-1.png"
-                  >
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-              <div class="item row align-items-center">
-                <div class="col-sm-3 pr-5">
-                  <a href="descripcion_producto.html">
-                    <img
-                      class="product-img"
-                      src="../assets/img/JugoNatural.png"
-                    />
-                  </a>
-                </div>
-                <div class="details col-sm-9">
-                  <div class="item__header">
-                    <a href="descripcion_producto.html">
-                      <h3 class="item__title">Jugos Naturales</h3>
-                    </a>
-                    <span class="item__dots"></span>
-                    <span class="item__price">$3500</span>
-                  </div>
-                  <p class="item__description">
-                    Jugos 100% naturales con fruta organica.
-                  </p>
-                  <button
-                    class="btn btn-sm btn-outline-primary my-cart-btn"
-                    data-id="4"
-                    data-name="Jugo Natural"
-                    data-price="3500"
-                    data-quantity="1"
-                    data-image="../assets/img/JugoNatural.png"
-                  >
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- End Menu Bebestible -->
+            <a href="#" class="button button" data-target="PastelesVeganos"
+              >Pasteles Veganos</a
+            >
+            <a href="#" class="button button" data-target="BebestibleMenu"
+              >Bebestibles</a
+            >
           </div>
-          <!-- End block -->
-          <script src="../assets/js/mycart.js"></script>
-          <script src="../assets/js/mycart-custom.js"></script>
-        </section>
-      </div>
-    </div>
-    <div class="nav-item my-cart-icon">
-      <img src="../assets/img/cart.svg" style="width: 20px" />
-      <span class="badge badge-notify my-cart-badge"> </span>
-    </div>
-    <div class="container my-5">
-      <!-- Footer -->
-      <footer
-        class="text-center text-lg-start text-white"
-        style="background-color: #5c0518d0"
-      >
-        <!-- links  -->
-        <section class="">
-          <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
-                <h6 class="text-uppercase fw-bold">EL RINCÓN DEL PASTEL</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #ffffffd0; height: 2px;"
-                />
-                <p>
-                  Nuestra empresa encargada de traer los mejores pasteles
-                  incluyendo venganos lleva mas de 30 años alegrando a la gente
-                  con nuestros productos de buena calidad y preparación.
-                </p>
+          <!-- Start Menu Pasteles Menu -->
+          <div
+            class="menu menu--is-visible"
+            id="MenuPasteles"
+            data-aos="fade-up"
+          >
+            <div class="item row align-items-center">
+              <div class="col-sm-3 pr-5">
+                <a href="descripcion_producto.html">
+                  <img
+                    class="product-img"
+                    src="../assets/img/TortaArcoiris.png"
+                  />
+                </a>
               </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold">PRODUCTOS</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #ffffffd0; height: 2px;"
-                />
-                <p>
-                  <a href="./index.html" class="text-white">Pasteles Veganos</a>
+              <div class="details col-sm-9">
+                <div class="item__header">
+                  <a href="descripcion_producto.html">
+                    <h3 class="item__title">Torta de Arcoiris</h3>
+                  </a>
+                  <span class="item__dots"></span>
+                  <span class="item__price">$10000</span>
+                </div>
+                <p class="item__description">
+                  Rico postre elaborado con bizcochos de colores y cobertura
+                  de crema de queso, perfecto para regalo de cumpleaños.
                 </p>
-                <p>
-                  <a href="./index.html" class="text-white">Pasteles</a>
-                </p>
-                <p>
-                  <a href="./index.html" class="text-white">Bebestibles</a>
-                </p>
+                <button
+                  class="btn btn-sm btn-outline-primary my-cart-btn"
+                  data-id="1"
+                  data-name="Torta Arcoiris"
+                  data-price="10000"
+                  data-quantity="1"
+                  data-image="../assets/img/TortaArcoiris.png"
+                >
+                  Añadir al carrito
+                </button>
               </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold">Contacto</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #ffffffd0; height: 2px;"
-                />
-                <p><i class="fas fa-home mr-3"></i> Santiago,Chile</p>
-                <p>
-                  <i class="fas fa-envelope mr-3"></i>
-                  elrincondelplacer@gmail.com
-                </p>
-                <p><i class="fas fa-phone mr-3"></i> + 569 3318 1391</p>
-                <p><i class="fas fa-print mr-3"></i> + 569 3754 6481</p>
-              </div>
-              <!-- Grid column -->
             </div>
-            <!-- Grid row -->
+            <div class="item row align-items-center">
+              <div class="col-sm-3 pr-5">
+                <a href="descripcion_producto.html">
+                  <img
+                    class="product-img"
+                    src="../assets/img/CremBrule.png"
+                  />
+                </a>
+              </div>
+              <div class="details col-sm-9">
+                <div class="item__header">
+                  <a href="descripcion_producto.html">
+                    <h3 class="item__title">Creme Brulee</h3>
+                  </a>
+                  <span class="item__dots"></span>
+                  <span class="item__price">$3000</span>
+                </div>
+                <p class="item__description">
+                  La crème brûlée es uno de los postres franceses más famosos
+                  que existe, incluye vainilla, caramelo, nata con ázucar entre
+                  sus ingredientes.
+                </p>
+                <button
+                  class="btn btn-sm btn-outline-primary my-cart-btn"
+                  data-id="2"
+                  data-name="Creme Brulee"
+                  data-price="3000"
+                  data-quantity="1"
+                  data-image="../assets/img/CremBrule.png"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
+            <div class="item row align-items-center">
+              <div class="col-sm-3 pr-5">
+                <a href="descripcion_producto.html">
+                  <img
+                    class="product-img"
+                    src="../assets/img/Cheesecake.png"
+                  />
+                </a>
+              </div>
+              <div class="details col-sm-9">
+                <div class="item__header">
+                  <a href="descripcion_producto.html">
+                    <h3 class="item__title">Cheesecake con Flan</h3>
+                  </a>
+                  <span class="item__dots"></span>
+                  <span class="item__price">$3000</span>
+                </div>
+                <p class="item__description">
+                  Una deliciosa mezcla de dos texturas cremosas que combina lo
+                  mejor de dos mundos.
+                </p>
+                <button
+                  class="btn btn-sm btn-outline-primary my-cart-btn"
+                  data-id="3"
+                  data-name="FlanCheese"
+                  data-price="3000"
+                  data-quantity="1"
+                  data-image="../assets/img/Cheesecake.png"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
+            <div class="item row align-items-center">
+              <div class="col-sm-3 pr-5">
+                <a href="descripcion_producto.html">
+                  <img
+                    class="product-img"
+                    src="../assets/img/TortaAlmendra.png"
+                  />
+                </a>
+              </div>
+              <div class="details col-sm-9">
+                <div class="item__header">
+                  <a href="descripcion_producto.html">
+                    >
+                    <h3 class="item__title">Torta de Moka y Almendras</h3>
+                  </a>
+                  <span class="item__dots"></span>
+                  <span class="item__price">$5500</span>
+                </div>
+                <p class="item__description">
+                  Rica torta hecha en base de moka con topping de almendras.
+                </p>
+                <button
+                  class="btn btn-sm btn-outline-primary my-cart-btn"
+                  data-id="4"
+                  data-name="Torta de Almendras"
+                  data-price="5500"
+                  data-quantity="1"
+                  data-image="../assets/img/TortaAlmendra.png"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
           </div>
-        </section>
-        <!-- Section: Links  -->
-
-        <!-- Copyright -->
-        <div
-          class="text-center p-3"
-          style="background-color: rgba(180, 66, 66, 0.575)"
-        >
-          © 2021 Copyright:
-          <a class="text-white" href="./index.html">EL rincón del pastel</a>
+          <!-- End Pasteles Menu -->
+          <!-- Start Pasteles Veganos Menu -->
+          <div class="menu" id="PastelesVeganos" data-aos="fade-up">
+            <div class="item row align-items-center">
+              <div class="col-sm-3 pr-5">
+                <a href="descripcion_producto.html">
+                  <img class="product-img" src="../assets/img/LemonPie.png" />
+                </a>
+              </div>
+              <div class="details col-sm-9">
+                <div class="item__header">
+                  <a href="descripcion_producto.html">
+                    <h3 class="item__title">Pie de Limon</h3>
+                  </a>
+                  <span class="item__dots"></span>
+                  <span class="item__price">$4000</span>
+                </div>
+                <p class="item__description">
+                  Rico Pie de Limon hecho 100% sólo con ingredientes de origen
+                  vegetal, desde el crust (la masa del pie) hasta la crema y
+                  el relleno.
+                </p>
+                <button
+                  class="btn btn-sm btn-outline-primary my-cart-btn"
+                  data-id="1"
+                  data-name="Pie de Limon"
+                  data-price="4000"
+                  data-quantity="1"
+                  data-image="../assets/img/LemonPie.png"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
+            <div class="item row align-items-center">
+              <div class="col-sm-3 pr-5">
+                <a href="descripcion_producto.html">
+                  <img class="product-img" src="../assets/img/MintCake.png" />
+                </a>
+              </div>
+              <div class="details col-sm-9">
+                <div class="item__header">
+                  <a href="descripcion_producto.html">
+                    <h3 class="item__title">Tarta de Menta</h3>
+                  </a>
+                  <span class="item__dots"></span>
+                  <span class="item__price">$5000</span>
+                </div>
+                <p class="item__description">
+                  Compuesta por un bizcocho de chocolate, crema de chocolate,
+                  una sabrosa crema de menta.
+                </p>
+                <button
+                  class="btn btn-sm btn-outline-primary my-cart-btn"
+                  data-id="2"
+                  data-name="Tarta de Menta Vegan"
+                  data-price="5000"
+                  data-quantity="1"
+                  data-image="../assets/img/MintCake.png"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+              s
+            </div>
+            <div class="item row align-items-center">
+              <div class="col-sm-3 pr-5">
+                <a href="descripcion_producto.html">
+                  <img
+                    class="product-img"
+                    src="../assets/img/TartaZana.png"
+                  />
+                </a>
+              </div>
+              <div class="details col-sm-9">
+                <div class="item__header">
+                  <a href="descripcion_producto.html">
+                    <h3 class="item__title">Tarta de Zanahoria</h3>
+                  </a>
+                  <span class="item__dots"></span>
+                  <span class="item__price">$2500</span>
+                </div>
+                <p class="item__description">
+                  Buena pinta, agradable textura, suave gusto y vitaminas
+                  destacadas A, E y K. Lo tiene todo!
+                </p>
+                <button
+                  class="btn btn-sm btn-outline-primary my-cart-btn"
+                  data-id="3"
+                  data-name="Tarta de zanahoria vegana"
+                  data-price="2500"
+                  data-quantity="1"
+                  data-image="../assets/img/TartaZana.png"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
+            <div class="item row align-items-center">
+              <div class="col-sm-3 pr-5">
+                <a href="descripcion_producto.html">
+                  <img
+                    class="product-img"
+                    src="../assets/img/ChocolateVegan.png"
+                  />
+                </a>
+              </div>
+              <div class="details col-sm-9">
+                <div class="item__header">
+                  <a href="descripcion_producto.html">
+                    <h3 class="item__title">Pastel Chocolate Vegano</h3>
+                  </a>
+                  <span class="item__dots"></span>
+                  <span class="item__price">$7000</span>
+                </div>
+                <p class="item__description">
+                  Es el pastel de chocolate más delicioso que hayas probado,
+                  más suave y chocolatoso, lo mejor de todo: libre de
+                  productos animales, libre de grasas trans o azúcares
+                  refinadas.
+                </p>
+                <button
+                  class="btn btn-sm btn-outline-primary my-cart-btn"
+                  data-id="4"
+                  data-name="Pastel Chocolate Vegano"
+                  data-price="7000"
+                  data-quantity="1"
+                  data-image="../assets/img/ChocolateVegan.png"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End Pasteles Veganos -->
+          <!-- Start Menu Bebestibles -->
+          <div class="menu" id="BebestibleMenu" data-aos="fade-up">
+            <div class="item row align-items-center">
+              <div class="col-sm-3 pr-5">
+                <a href="descripcion_producto.html">
+                  <img
+                    class="product-img"
+                    src="../assets/img/Cappuccino-1.png"
+                  />
+                </a>
+              </div>
+              <div class="details col-sm-9">
+                <div class="item__header">
+                  <a href="descripcion_producto.html">
+                    <h3 class="item__title">Cappuccino</h3>
+                  </a>
+                  <span class="item__dots"></span>
+                  <span class="item__price">$2500</span>
+                </div>
+                <p class="item__description">
+                  Cappucino hecho con los mejores granos de café, opción con
+                  leche vegana
+                </p>
+                <button
+                  class="btn btn-sm btn-outline-primary my-cart-btn"
+                  data-id="1"
+                  data-name="Cappucino"
+                  data-price="2500"
+                  data-quantity="1"
+                  data-image="../assets/img/cappuccino-1.png"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
+            <div class="item row align-items-center">
+              <div class="col-sm-3 pr-5">
+                <a href="descripcion_producto.html">
+                  <img
+                    class="product-img"
+                    src="../assets/img/Limonada-1.png"
+                  />
+                </a>
+              </div>
+              <div class="details col-sm-9">
+                <div class="item__header">
+                  <a href="descripcion_producto.html">
+                    <h3 class="item__title">Limonada</h3>
+                  </a>
+                  <span class="item__dots"></span>
+                  <span class="item__price">$2000</span>
+                </div>
+                <p class="item__description">
+                  Limonada de limon de pica con hojas de menta
+                </p>
+                <button
+                  class="btn btn-sm btn-outline-primary my-cart-btn"
+                  data-id="2"
+                  data-name="Limonada"
+                  data-price="2000"
+                  data-quantity="1"
+                  data-image="../assets/img/Limonada-1.png"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
+            <div class="item row align-items-center">
+              <div class="col-sm-3 pr-5">
+                <a href="descripcion_producto.html">
+                  <img class="product-img" src="../assets/img/Coca-1.png" />
+                </a>
+              </div>
+              <div class="details col-sm-9">
+                <div class="item__header">
+                  <a href="descripcion_producto.html">
+                    <h3 class="item__title">Bebidas clasicas</h3>
+                  </a>
+                  <span class="item__dots"></span>
+                  <span class="item__price">$1000</span>
+                </div>
+                <p class="item__description">
+                  Trabajamos con la linea The Company Coca-Cola y CCU.
+                </p>
+                <button
+                  class="btn btn-sm btn-outline-primary my-cart-btn"
+                  data-id="3"
+                  data-name="Coca Cola"
+                  data-price="1000"
+                  data-quantity="1"
+                  data-image="../assets/img/Coca-1.png"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
+            <div class="item row align-items-center">
+              <div class="col-sm-3 pr-5">
+                <a href="descripcion_producto.html">
+                  <img
+                    class="product-img"
+                    src="../assets/img/JugoNatural.png"
+                  />
+                </a>
+              </div>
+              <div class="details col-sm-9">
+                <div class="item__header">
+                  <a href="descripcion_producto.html">
+                    <h3 class="item__title">Jugos Naturales</h3>
+                  </a>
+                  <span class="item__dots"></span>
+                  <span class="item__price">$3500</span>
+                </div>
+                <p class="item__description">
+                  Jugos 100% naturales con fruta organica.
+                </p>
+                <button
+                  class="btn btn-sm btn-outline-primary my-cart-btn"
+                  data-id="4"
+                  data-name="Jugo Natural"
+                  data-price="3500"
+                  data-quantity="1"
+                  data-image="../assets/img/JugoNatural.png"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End Menu Bebestible -->
         </div>
-        <!-- Copyright -->
-      </footer>
-      <!-- Footer -->
+        <!-- End block -->
+      </section>
     </div>
+  </div>
+  <div class="nav-item my-cart-icon">
+    <img src="../assets/img/cart.svg" style="width: 20px" />
+    <span class="badge badge-notify my-cart-badge"> </span>
+  </div>
+  <div class="container my-5">
+    <!-- Footer -->
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #5c0518d0"
+    >
+      <!-- links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">EL RINCÓN DEL PASTEL</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #ffffffd0; height: 2px"
+              />
+              <p>
+                Nuestra empresa encargada de traer los mejores pasteles
+                incluyendo venganos lleva mas de 30 años alegrando a la gente
+                con nuestros productos de buena calidad y preparación.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">PRODUCTOS</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #ffffffd0; height: 2px"
+              />
+              <p>
+                <a href="./index.html#menu" class="text-white">Pasteles Veganos</a>
+              </p>
+              <p>
+                <a href="./index.html#menu" class="text-white">Pasteles</a>
+              </p>
+              <p>
+                <a href="./index.html#menu" class="text-white">Bebestibles</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contacto</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #ffffffd0; height: 2px"
+              />
+              <p><i class="fas fa-home mr-3"></i> Santiago,Chile</p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i>
+                elrincondelplacer@gmail.com
+              </p>
+              <p><i class="fas fa-phone mr-3"></i> + 569 3318 1391</p>
+              <p><i class="fas fa-print mr-3"></i> + 569 3754 6481</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(180, 66, 66, 0.575)"
+      >
+        © 2021 Copyright:
+        <a class="text-white" href="./index.html">EL rincón del pastel</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../assets/js/custom-general.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"
+  ></script>
     <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="../assets/js/custom-general.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"/><!-- bootstrap 5 -->
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
-      crossorigin="anonymous"/><!-- bootstrap 5 -->
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
-      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
-      crossorigin="anonymous"/><!-- bootstrap 5 -->
-    ></script>
-  </body>
+  <script src="../assets/js/mycart.js"></script>
+  <script src="../assets/js/mycart-custom.js"></script>
+</body>
 </html>
